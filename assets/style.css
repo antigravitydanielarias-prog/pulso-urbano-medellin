@@ -1,0 +1,168 @@
+/* =============================================================================
+   assets/style.css — Pulso Urbano · Tema oscuro urbano
+   ============================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── Variables ────────────────────────────────────────────────────────────── */
+:root {
+  --bg-main:     #0A0E1A;
+  --bg-sidebar:  #0D1117;
+  --bg-card:     #131B2A;
+  --border:      rgba(255,255,255,0.07);
+  --border-accent: rgba(247,148,29,0.25);
+  --primary:     #F7941D;
+  --success:     #00C896;
+  --danger:      #FF4B5C;
+  --text:        #E8EDF5;
+  --muted:       #8892A4;
+  --font-ui:     'Inter', sans-serif;
+  --font-display:'Syne', sans-serif;
+  --font-mono:   'JetBrains Mono', monospace;
+}
+
+/* ── Fondo principal ─────────────────────────────────────────────────────── */
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"],
+.main .block-container {
+  background-color: var(--bg-main) !important;
+  color: var(--text) !important;
+  font-family: var(--font-ui) !important;
+}
+
+.main .block-container {
+  padding-top: 1.5rem !important;
+  padding-bottom: 2rem !important;
+  max-width: 100% !important;
+}
+
+/* ── Sidebar ────────────────────────────────────────────────────────────── */
+[data-testid="stSidebar"] {
+  background-color: var(--bg-sidebar) !important;
+  border-right: 1px solid var(--border) !important;
+}
+
+[data-testid="stSidebar"] * {
+  font-family: var(--font-ui) !important;
+  color: var(--text) !important;
+}
+
+[data-testid="stSidebar"] label {
+  font-size: 12px !important;
+  color: var(--muted) !important;
+  letter-spacing: 0.03em;
+}
+
+/* ── Botón primario ────────────────────────────────────────────────────── */
+[data-testid="stButton"] > button[kind="primary"] {
+  background: var(--primary) !important;
+  color: #0A0E1A !important;
+  font-weight: 800 !important;
+  font-family: var(--font-display) !important;
+  letter-spacing: 0.06em !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  font-size: 13px !important;
+  transition: opacity 0.15s ease !important;
+}
+
+[data-testid="stButton"] > button[kind="primary"]:hover {
+  opacity: 0.88 !important;
+}
+
+/* ── Multiselect / Select ───────────────────────────────────────────────── */
+[data-testid="stMultiSelect"] div[data-baseweb="select"] > div,
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div {
+  background: rgba(19, 27, 42, 0.8) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px !important;
+  color: var(--text) !important;
+}
+
+[data-baseweb="tag"] {
+  background: rgba(247, 148, 29, 0.18) !important;
+  border: 1px solid rgba(247, 148, 29, 0.35) !important;
+  color: var(--primary) !important;
+  border-radius: 4px !important;
+  font-size: 11px !important;
+}
+
+/* ── Checkboxes ─────────────────────────────────────────────────────────── */
+[data-testid="stCheckbox"] span[data-testid="stCheckboxLabelText"] {
+  font-size: 12.5px !important;
+  color: var(--text) !important;
+}
+
+[data-testid="stCheckbox"] div[data-testid="stWidgetLabel"] {
+  color: var(--text) !important;
+}
+
+/* ── Toggle ─────────────────────────────────────────────────────────────── */
+[data-testid="stToggle"] label {
+  font-size: 12.5px !important;
+}
+
+/* ── Dataframe ──────────────────────────────────────────────────────────── */
+[data-testid="stDataFrame"] {
+  background: var(--bg-card) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--border) !important;
+  overflow: hidden !important;
+}
+
+[data-testid="stDataFrame"] th {
+  background: rgba(247, 148, 29, 0.1) !important;
+  color: var(--primary) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+[data-testid="stDataFrame"] td {
+  color: var(--text) !important;
+  font-size: 12px !important;
+  font-family: var(--font-mono) !important;
+  border-color: var(--border) !important;
+}
+
+/* ── Spinner ────────────────────────────────────────────────────────────── */
+[data-testid="stSpinner"] {
+  color: var(--primary) !important;
+}
+
+/* ── Headers globales ───────────────────────────────────────────────────── */
+h1, h2, h3 {
+  font-family: var(--font-display) !important;
+  color: var(--text) !important;
+}
+
+/* ── Métricas (st.metric) ──────────────────────────────────────────────── */
+[data-testid="stMetricValue"] {
+  font-family: var(--font-display) !important;
+  color: var(--primary) !important;
+  font-weight: 800 !important;
+}
+
+[data-testid="stMetricLabel"] {
+  color: var(--muted) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.08em !important;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
+::-webkit-scrollbar-thumb {
+  background: rgba(247,148,29,0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(247,148,29,0.55);
+}
+
+/* ── Folium map container ────────────────────────────────────────────── */
+iframe {
+  border-radius: 10px !important;
+  border: 1px solid var(--border-accent) !important;
+}

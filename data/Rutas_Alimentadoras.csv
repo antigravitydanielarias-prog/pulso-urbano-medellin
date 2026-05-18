@@ -1,0 +1,27 @@
+ruta,sentido,sistema,municipio,id_ruta,cuenca,itinerario,SHAPE__Length,objectid,linea
+C3-001,1,A,05001,7,3,C3-001 Aguacatala - Santa Gema,6731.42,7,C3-001 Santa Gema - Aguacatala
+C3-001,2,A,05001,7,3,C3-001 Santa Gema - Aguacatala,7121.61,8,C3-001 Santa Gema - Aguacatala
+C3-002,2,A,05001,8,3,C3-002 Bulerías - Aguacatala,7235.94,9,C3-002 Aguacatala - Bulerias
+C3-003M,1,A,05001,61,3,C3-003M Belen - Manzanillo,5675.42,13,C3-003M Belen - Manzanillo
+C3-003M,2,A,05001,61,3,C3-003M Manzanillo - Belen,5906.58,14,C3-003M Belen - Manzanillo
+C3-003RA,1,A,05001,69,3,C3-003RA Belén - Rodeo Alto,4823.30,15,C3-003RA Belén - Rodeo Alto
+C3-004B,1,A,05001,62,3,C3-004B Los Alpes - Buga,5266.86,5,C3-004B Altavista - Buga
+C3-004B,2,A,05001,62,3,C3-004B Buga - Los Alpes,6584.76,6,C3-004B Altavista - Buga
+C3-005,1,A,05001,11,3,C3-005 Aguas Frías,5281.59,21,C3-005 Belén Aguas Frías - UDM
+C3-005,2,A,05001,11,3,C3-005 Universidad de Medellín,5519.29,22,C3-005 Belén Aguas Frías - UDM
+C3-007,1,A,05001,83,3,C3-007 La Palma - Loma de Los Bernal,3578.93,26,C3-007 La Palma - Loma de los Bernal
+C3-007,2,A,05001,83,3,C3-007 Loma de Los Bernal - La Palma,4415.83,2,C3-007 La Palma - Loma de los Bernal
+C6-001,1,A,05001,30,6,C6-001 Zamora Santa Rita,3034.24,75,C6-001 Santa Rita - Estación Acevedo
+C6-001,2,A,05001,30,6,C6-001 Estacion Acevedo,2745.35,52,C6-001 Santa Rita - Estación Acevedo
+C6-002,1,A,05001,44,6,C6-002 Versalles,7170.73,57,C6-002 Versalles - Estación Hospital
+C6-003,1,A,05001,64,6,C6-003 Campo Valdés,3798.07,58,C6-003 Campo Valdés - Estación Hospital
+C6-004,1,A,05001,29,6,C6-004 Reserva del Seminario,6383.85,55,C6-004 Reserva del Seminario - Estación Exposiciones
+C6-006,1,A,05001,73,6,C6-006 Villa Liliam,1918.31,44,C6-006 Villa Liliam - Estación Alejandro Echavarría
+C6-007,1,A,05001,37,6,C6-007 Alpujarra - Cataluña,6248.35,61,C6-007 Cataluña - Alpujarra
+C6-008,1,A,05001,75,6,C6-008 La Libertad,5150.01,46,C6-008 La Libertad - Estación Prado
+C6-009,1,A,05001,33,6,C6-009 Enciso,4971.33,47,C6-009 Enciso - Estación Prado
+C6-013,1,A,05001,14,6,C6-013 Popular No.1,4182.84,72,C6-013 Popular N.1 - Estación Tricentenario
+C6-014,1,A,05001,116,6,C6-014 La Ladera,2627.18,30,C6-014 La Ladera - Prado
+C6-015A,1,A,05001,86,6,C6-015A Villa de Guadalupe,5228.48,36,C6-015A Villa de Guadalupe - Estación Hospital
+C6-016,1,A,05001,38,6,C6-016 Nuevo Horizonte,6208.42,33,C6-016 Nuevo Horizonte - Estación Hospital
+C6-021,1,A,05001,20,6,C6-021 Estación Tricentenario,3904.09,78,C6-021 Granizal - Estación Tricentenario

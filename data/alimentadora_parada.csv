@@ -1,0 +1,26 @@
+X,Y,ruta,parada,label,itinerario,objectid,linea
+-8416084.40125491,695785.956260588,C3-001,Av. 80 con Cll 32 EE,Av. 80 con Cll 32 EE,C3-001 Santa Gema - Aguacatala,175,C3-001 Santa Gema - Aguacatala
+-8416011.07607652,695445.904321071,C3-001,Av. 80 con Cll 32 E,Av. 80 con Cll 32 E,C3-001 Santa Gema - Aguacatala,177,C3-001 Santa Gema - Aguacatala
+-8415991.59672375,694880.659257624,C3-001,Av 80 con Cll 28,Av 80 con Cll 28,C3-001 Santa Gema - Aguacatala,179,C3-001 Santa Gema - Aguacatala
+-8415972.60166391,694596.720168088,C3-001,Av 80 con Cll 25,Av 80 con Cll 25,C3-001 Santa Gema - Aguacatala,180,C3-001 Santa Gema - Aguacatala
+-8413667.36394484,690878.198341839,C3-001,Integración aguacatala,Integración aguacatala,C3-001 Santa Gema - Aguacatala,195,C3-001 Santa Gema - Aguacatala
+-8415873.30149947,695008.633843634,C3-007,Cll 30 con Cra 80 Integración La Palma,Integración La Palma,C3-007 La Palma - Loma de los Bernal,129,C3-007 La Palma - Loma de los Bernal
+-8416272.66718886,694255.246636964,C3-007,Cll 19B con Cra 82,Cll 19B con Cra 82,C3-007 Loma de Los Bernal - La Palma,126,C3-007 La Palma - Loma de los Bernal
+-8415319.01430078,695003.396651458,C3-003M,Integración Belén Cra 76 con Cll 29,Integración Belén,C3-003M Manzanillo - Belen,312,C3-003M Belen - Manzanillo
+-8415562.48179253,693928.036256585,C3-003M,Cra. 76 con Cll. 12,Cra. 76 con Cll. 12,C3-003M Belen - Manzanillo,169,C3-003M Belen - Manzanillo
+-8415287.64926729,695038.024153866,C3-003RA,Integracion Parque de Belén,Integracion Parque de Belén,C3-003RA Belén - Rodeo Alto,418,C3-003RA Belén - Rodeo Alto
+-8411604.35321569,701719.56699701,C6-013,Cra. 51 con Cll 97,Cra. 51 con Cll 97,C6-013 Estación Tricentenario,675,C6-013 Popular N.1 - Estación Tricentenario
+-8410405.4708918,697187.353678688,C6-014,Cll 59A con Cra 32,Cll 59A con Cra 32,C6-014 Prado,693,C6-014 La Ladera - Prado
+-8409749.84744083,701576.130302072,C6-015A,Cra 37 con Cll 100,Cra 37 con Cll 100,C6-015A Estación Hospital,717,C6-015A Villa de Guadalupe - Estación Hospital
+-8411697.01976704,698583.036790479,C6-016,Estación Hospital,Estación Hospital,C6-016 Nuevo Horizonte - Estación Hospital,773,C6-016 Nuevo Horizonte - Estación Hospital
+-8409636.362015,701882.281164844,C6-021,Cll. 103 con Cra 36B,Cll. 103 con Cra 36B,C6-021 Granizal - Estación Tricentenario,1507,C6-021 Granizal - Estación Tricentenario
+-8412038.67941194,697935.74904108,C6-008,Cra.51 con Cll.59,Cra.51 con Cll.59,C6-008 Estación Prado,893,C6-008 La Libertad - Estación Prado
+-8409342.97829834,695614.836452276,C6-006,Cll 51 entre Cra 17-16A,Cll 51 entre Cra 17-16A,C6-006 Estación Alejandro Echavarría,870,C6-006 Villa Liliam - Estación Alejandro Echavarría
+-8410412.21784911,698091.6820831,C6-002,Cll 66 con Cra. 39A,Cll 66 con Cra. 39A,C6-002 Punto Cero,1051,C6-002 Versalles - Estación Hospital - Punto Cero
+-8411568.61350241,700693.168263633,C6-003,Cra. 51B con Cll. 90,Cra. 51B con Cll. 90,C6-003 Estación Hospital,1126,C6-003 Campo Valdés - Estación Hospital
+-8409868.81197063,694547.241394993,C6-004,Cra.19 con Cll 33,Cra.19 con Cll 33,C6-004 Estación Exposiciones,1147,C6-004 Reserva del Seminario - Estación Exposiciones
+-8411054.26862109,702619.527705256,C6-001,Estación Acevedo Metro,Estación Acevedo Metro,C6-001 Estación Acevedo,1026,C6-001 Santa Rita - Estación Acevedo
+-8420221.48866027,695272.697567143,C3-005,Cra 138 con Cll 31,Cra 138 con Cll 31,C3-005 Universidad de Medellín,529,C3-005 Belén Aguas Frías - UDM
+-8416835.88977984,695105.108329616,C3-005,Cra 87 con Cll 30A Integración UDM,Integración UDM,C3-005 Belén Aguas Frías - UDM,550,C3-005 Belén Aguas Frías - UDM
+-8409342.97829834,695614.836452276,C6-023,Alejandro Echavarría,Alejandro Echavarría,C6-023 Santa Lucía - Estación Alejandro Echavarría,1548,C6-023 Santa Lucía - Estación Alejandro Echavarría
+-8411937.76513293,697983.774221852,C6-022,Cra. 51 con Cll.58 Integración Prado,Integración Prado,C6-022 Estación Prado,1706,C6-022 Las Partidas - Estación Prado

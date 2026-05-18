@@ -1,0 +1,44 @@
+route_id,stop_name,lat,lon,order
+130,Uva Tesoro Carrera 30,6.2089,-75.5647,1
+130,Casa María y El Niño,6.2096,-75.5653,2
+130,Supermercado La Vaquita,6.2102,-75.566,3
+130,Los Balsos Av El Poblado,6.2115,-75.5675,4
+130,CC Santa Fe Av El Poblado,6.2128,-75.5683,5
+130,CC Río Sur Av El Poblado,6.214,-75.5692,6
+130,Mall Milla de Oro,6.2152,-75.57,7
+130,CC La Estrada,6.216,-75.5708,8
+130,San Fernando Plaza,6.2172,-75.5715,9
+130,Clínica Medellín Av El Poblado,6.2185,-75.5722,10
+130,Castropol Av El Poblado,6.22,-75.5735,11
+130,Centro Empresarial Block,6.221,-75.5745,12
+130,Dislicores Cr 43A,6.2235,-75.5765,14
+130,Cl 29 Cr 43A,6.2245,-75.5775,15
+130,Hospital General Av Palacé,6.242,-75.5845,16
+130,Parque San Antonio,6.244,-75.594,23
+190,La Almería Cl 35,6.246,-75.6055,1
+190,Parque La Castellana,6.2405,-75.601,8
+190,Iglesia Santa Gema,6.2385,-75.599,10
+190,Segundo Parque Laureles,6.2375,-75.598,12
+190,Primer Parque Laureles,6.2335,-75.594,15
+190,Circular 1,6.2325,-75.593,16
+190,UPB Circular 1,6.2315,-75.592,17
+190,Av Bolivariana Cr 66B,6.2295,-75.59,19
+190,Separador Alpujarra,6.229,-75.5885,22
+190,Parque San Antonio,6.244,-75.594,27
+191,Segundo Parque Laureles,6.2355,-75.596,8
+191,Circular 2,6.237,-75.596,11
+191,San Juan Cr 73,6.2335,-75.5925,15
+191,Estadio Atanasio Girardot,6.2569,-75.5906,19
+191,Estación Estadio Cr 70,6.2605,-75.5935,46
+191,Suramericana,6.255,-75.59,26
+191,Parque San Antonio,6.244,-75.594,33
+302,Av 80 Cl 37D,6.2535,-75.609,2
+302,Dg 79 Cl 15,6.2425,-75.602,12
+302,Sura Aguacatala,6.2055,-75.578,23
+302,EAFIT,6.2015,-75.574,27
+302,Politécnico JIC,6.1995,-75.572,29
+302,Ciudad del Río,6.225,-75.5835,33
+302,Perpetuo Socorro,6.2325,-75.589,37
+302,Parque San Antonio,6.244,-75.594,42
+302,Prado Cl 58,6.258,-75.58,46
+302,Plaza Minorista,6.2535,-75.5855,50

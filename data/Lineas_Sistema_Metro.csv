@@ -1,0 +1,17 @@
+sistema,itinerario,SHAPE__Length,objectid,linea
+M,San Antonio - San Javier - San Antonio,3686.74214361782,1,C
+M,Niquia-La Estrella-Niquia,25606.1714470889,2,A
+M,San Antonio - San Javier - San Antonio,5535.86608168077,3,B
+C,Acevedo - Santo Domingo,2027.17536076372,4,K
+C,San Javier - La Aurora,2730.93456300636,5,J
+C,Santo Domingo - Arví,4505.03354398679,6,L
+C,Miraflores -13 de Noviembre,1083.07504899319,7,M
+C,Oriente - Villa Sierra,1420.00540087831,8,H
+C,Acevedo - Picacho,2716.65877810362,9,P
+MPLUS,Parque de Aranjuez - Universidad de Medellín,12781.3256398079,10,1
+MPLUS,Universidad de Medellín - Parque de Aranjuez,12781.6973529291,11,1
+MPLUS,Caribe - La Palma,9241.31062593528,12,O
+MPLUS,La Palma - Caribe,9217.36932729153,13,O
+MPLUS,Parque de Aranjuez - Universidad de Medellín,13545.3392913998,14,2
+MPLUS,Universidad de Medellín - Parque de Aranjuez,13111.142371823,15,2
+T,San Antonio - Oriente,4171.29090884914,16,T
