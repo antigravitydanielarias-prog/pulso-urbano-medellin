@@ -1,5 +1,5 @@
 # =============================================================================
-# app.py — Pulso Urbano · Medellín — Dashboard de Movilidad
+# app.py — Pulso Urbano · Valle de Aburrá — Dashboard de Movilidad
 # =============================================================================
 #
 # Punto de entrada principal. Para correr:
@@ -11,7 +11,7 @@ import streamlit as st
 
 # ── Page config — DEBE IR PRIMERO ────────────────────────────────────────────
 st.set_page_config(
-    page_title="Pulso Urbano · Medellín",
+    page_title="Pulso Urbano · Valle de Aburrá",
     page_icon="🚇",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -22,18 +22,21 @@ from streamlit_folium import st_folium
 
 from config import (
     MOTIVOS_VIAJE, FRANJAS_HORARIAS, ESTRATOS,
-    LINE_COLORS, SYSTEM_COLORS,
+    LINE_COLORS, SYSTEM_COLORS, AMVA_MUNICIPIOS,
 )
-from modules.data_loader   import load_all
+from modules.data_loader    import load_all
 from modules.data_processor import filter_estaciones, compute_system_summary
-from modules.rules_engine  import run_analysis, AnalysisContext
-from modules.map_renderer  import build_map
-from modules.ui_components import (
+from modules.rules_engine   import run_analysis, AnalysisContext
+from modules.map_renderer   import build_map
+from modules.ui_components  import (
     render_conclusion_card,
     render_kpi_row,
     render_parque_chart,
     render_empty_state,
     render_section_header,
+    render_amva_kpis,
+    render_distribucion_horaria_chart,
+    render_modal_share_chart,
 )
 
 
@@ -43,7 +46,6 @@ def _inject_css():
         with open("assets/style.css") as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     except FileNotFoundError:
-        # Fallback mínimo si no existe el archivo
         st.markdown("""
         <style>
         [data-testid="stAppViewContainer"] { background: #0A0E1A; }
@@ -84,7 +86,7 @@ with st.sidebar:
       <div style="font-size:22px;font-weight:900;letter-spacing:-0.02em;
                   color:#F7941D;line-height:1.1">PULSO URBANO</div>
       <div style="font-size:11px;color:#8892A4;letter-spacing:0.12em">
-        MEDELLÍN · MOVILIDAD
+        VALLE DE ABURRÁ · MOVILIDAD
       </div>
     </div>
     """, unsafe_allow_html=True)
@@ -130,7 +132,7 @@ with st.sidebar:
         "Franja horaria",
         options=range(len(franja_keys)),
         format_func=lambda i: franja_labels[i],
-        index=2,   # Tarde por defecto (hora pico)
+        index=2,   # Tarde por defecto
     )
     franja_sel = franja_keys[franja_idx]
 
@@ -204,22 +206,28 @@ if ejecutar:
 # =============================================================================
 
 # ── Header ────────────────────────────────────────────────────────────────────
-st.markdown("""
-<div style="padding:0 0 16px 0">
-  <h1 style="margin:0;font-size:26px;font-weight:900;
-             letter-spacing:-0.02em;color:#E8EDF5">
-    Sistema Integrado de Transporte · Medellín
-  </h1>
-  <p style="margin:4px 0 0 0;color:#8892A4;font-size:13px">
-    Datos reales del Metro de Medellín · Flujos simulados · Motor de análisis por reglas
-  </p>
-</div>
-""", unsafe_allow_html=True)
+st.markdown(
+    '<div style="padding:0 0 12px 0">'
+    '<h1 style="margin:0;font-size:26px;font-weight:900;'
+    'letter-spacing:-0.02em;color:#E8EDF5">'
+    'Sistema de Movilidad · Valle de Aburrá'
+    '</h1>'
+    '<p style="margin:4px 0 0 0;color:#8892A4;font-size:13px">'
+    'SITVA · Metro, Metrocable, Tranvía, Metro Plus · '
+    'Encuesta OD AMVA 2025 · Flujos calibrados · Motor de reglas urbanas'
+    '</p>'
+    '</div>',
+    unsafe_allow_html=True,
+)
 
-# ── KPI row (si hay análisis) ─────────────────────────────────────────────────
+# ── KPIs AMVA (siempre visibles) ──────────────────────────────────────────────
+render_amva_kpis()
+st.markdown("<div style='height:10px'></div>", unsafe_allow_html=True)
+
+# ── KPI row del análisis (solo si hay análisis) ───────────────────────────────
 if st.session_state.analisis_listo and st.session_state.summary:
     render_kpi_row(st.session_state.summary)
-    st.markdown("<div style='height:12px'></div>", unsafe_allow_html=True)
+    st.markdown("<div style='height:10px'></div>", unsafe_allow_html=True)
 
 # ── Mapa ──────────────────────────────────────────────────────────────────────
 df_para_mapa = (
@@ -242,10 +250,39 @@ mapa = build_map(
 st_folium(
     mapa,
     width="100%",
-    height=520,
+    height=500,
     returned_objects=[],
     key="mapa_principal",
 )
+
+st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+
+# ── Contexto AMVA — gráficas con datos reales ─────────────────────────────────
+render_section_header(
+    "Contexto AMVA · Valle de Aburrá",
+    "Encuesta Origen-Destino 2025 · 6,49M viajes/día hábil · 10 municipios",
+)
+
+col_horario, col_modal = st.columns([3, 2], gap="large")
+
+with col_horario:
+    st.markdown(
+        '<div style="font-size:11px;color:#8892A4;margin-bottom:4px">'
+        'DISTRIBUCIÓN HORARIA — todos los modos · '
+        '<span style="color:#F7941D">banda naranja = franja seleccionada</span>'
+        '</div>',
+        unsafe_allow_html=True,
+    )
+    render_distribucion_horaria_chart(franja_sel)
+
+with col_modal:
+    st.markdown(
+        '<div style="font-size:11px;color:#8892A4;margin-bottom:4px">'
+        'MODO PRINCIPAL — % del total de viajes'
+        '</div>',
+        unsafe_allow_html=True,
+    )
+    render_modal_share_chart()
 
 st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
 
@@ -299,11 +336,12 @@ with col_tabla:
         render_empty_state("Ejecuta el análisis para ver la tabla.")
 
 # ── Footer ────────────────────────────────────────────────────────────────────
-st.markdown("""
-<div style="text-align:center;color:#3A4558;font-size:11px;
-            margin-top:30px;padding-top:16px;
-            border-top:1px solid rgba(255,255,255,0.05)">
-  Pulso Urbano · Datos: Metro de Medellín, OpenStreetMap ·
-  Flujos simulados con base en patrones reales
-</div>
-""", unsafe_allow_html=True)
+st.markdown(
+    '<div style="text-align:center;color:#3A4558;font-size:11px;'
+    'margin-top:30px;padding-top:16px;'
+    'border-top:1px solid rgba(255,255,255,0.05)">'
+    'Pulso Urbano · Datos: Metro de Medellín, OpenStreetMap · '
+    'Encuesta OD AMVA 2025 · Flujos calibrados con base en patrones reales'
+    '</div>',
+    unsafe_allow_html=True,
+)

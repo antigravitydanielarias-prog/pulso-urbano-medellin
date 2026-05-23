@@ -52,7 +52,7 @@ THRESHOLDS = {
     "delta_parque_caida":    -0.10,
 }
 
-MOTIVOS_VIAJE = ["Trabajo", "Estudio", "Salud", "Recreación", "Compras", "Otro"]
+MOTIVOS_VIAJE = ["Trabajo", "Estudio", "Regreso al hogar", "Salud", "Recreación", "Ocio", "Compras", "Otro"]
 
 FRANJAS_HORARIAS = {
     "manana":    "🌅 Mañana (5 – 9 am)",
@@ -79,3 +79,90 @@ SEVERITY_COLORS = {
     "atipico":   "#FF4B5C",
     "recomend":  "#F7941D",
 }
+
+# =============================================================================
+# Datos reales AMVA — Encuesta Origen-Destino 2025
+# =============================================================================
+
+AMVA_MUNICIPIOS = [
+    "Medellín", "Bello", "Itagüí", "Envigado", "Sabaneta",
+    "La Estrella", "Caldas", "Copacabana", "Girardota", "Barbosa",
+]
+
+AMVA_KPIS = {
+    "total_viajes":          6_490_299,
+    "pct_no_viajan":         31.59,
+    "tiempo_promedio_min":   39.28,
+    "viajes_privados":       1_879_454,
+    "viajes_no_motorizados": 2_179_415,
+    "viajes_publicos":       2_196_961,
+    "viajes_per_capita":     1.6,
+    "motos_por_1000":        120.5,
+    "autos_por_1000":        67.13,
+}
+
+# Distribución horaria — viajes por hora de inicio (todos los modos) — AMVA 2025
+AMVA_HORARIO = {
+    "hora":          list(range(24)),
+    "informal":      [578,1037,1761,976,1995,6721,16546,19532,14244,17450,
+                      20025,14478,12339,11715,14096,13933,15674,17909,10814,
+                      8178,3953,4581,4130,1803],
+    "publico":       [2927,1347,3113,5859,64220,148582,239034,175367,118392,98624,
+                      113663,100227,119082,105322,131900,116221,157919,212837,130453,
+                      60774,41998,27155,19844,2100],
+    "privado":       [1775,3685,6873,7442,26723,114380,230844,200941,100780,65839,
+                      72142,69099,123540,85686,98803,92947,130123,181714,97205,
+                      54753,50848,27630,22793,12888],
+    "no_motorizado": [1778,1530,1883,2343,9845,74270,230544,123771,113922,110015,
+                      135481,151333,341052,110943,102425,95026,107067,225683,111277,
+                      58162,31118,17632,16028,6287],
+}
+
+# Rango de horas por franja para highlighting en gráfica
+AMVA_FRANJA_HORAS = {
+    "madrugada": (0,  5),
+    "manana":    (5,  9),
+    "mediodia":  (9,  13),
+    "tarde":     (13, 20),
+    "noche":     (20, 24),
+}
+
+# Modal share real — % de viajes por modo principal (OD 2025)
+AMVA_MODOS = {
+    "A pie":        32.68,
+    "Masivo":       16.44,
+    "TPC":          14.94,
+    "Motocicleta":  14.57,
+    "Automóvil":    11.70,
+    "Otros":         6.33,
+    "Taxi":          2.47,
+    "Bicicleta":     0.86,
+}
+
+AMVA_MODOS_COLORES = {
+    "A pie":       "#00C896",
+    "Masivo":      "#F7941D",
+    "TPC":         "#FF9800",
+    "Motocicleta": "#8892A4",
+    "Automóvil":   "#FF4B5C",
+    "Taxi":        "#607D8B",
+    "Bicicleta":   "#00BCD4",
+    "Otros":       "#546E7A",
+}
+
+# % de viajes por estrato socioeconómico
+AMVA_ESTRATOS_PCT = {1: 13.38, 2: 39.89, 3: 29.44, 4: 5.87, 5: 7.02, 6: 4.40}
+
+# Top zonas generadoras de viajes (Macrozonas OD)
+AMVA_MACROZONAS_TOP = [
+    {"municipio": "Medellín",   "zona": "La Candelaria",     "pct": 8.64},
+    {"municipio": "Medellín",   "zona": "El Poblado",        "pct": 6.88},
+    {"municipio": "Medellín",   "zona": "Robledo",           "pct": 5.11},
+    {"municipio": "Medellín",   "zona": "Belén",             "pct": 5.09},
+    {"municipio": "Medellín",   "zona": "Laureles-Estadio",  "pct": 4.57},
+    {"municipio": "Sabaneta",   "zona": "Urbana Sabaneta",   "pct": 2.44},
+    {"municipio": "Bello",      "zona": "Comuna 04",         "pct": 2.44},
+    {"municipio": "Itagüí",     "zona": "Comuna 01",         "pct": 2.12},
+    {"municipio": "Envigado",   "zona": "Urbana Envigado",   "pct": 1.98},
+    {"municipio": "Copacabana", "zona": "Urbana Copacabana", "pct": 1.23},
+]
