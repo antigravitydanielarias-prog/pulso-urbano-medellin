@@ -35,7 +35,7 @@ from modules.ui_components  import (
     render_empty_state,
     render_section_header,
     render_amva_kpis,
-    render_distribucion_horaria_chart,
+    render_timeline_saturacion,
     render_modal_share_chart,
 )
 
@@ -268,12 +268,12 @@ col_horario, col_modal = st.columns([3, 2], gap="large")
 with col_horario:
     st.markdown(
         '<div style="font-size:11px;color:#8892A4;margin-bottom:4px">'
-        'DISTRIBUCIÓN HORARIA — todos los modos · '
-        '<span style="color:#F7941D">banda naranja = franja seleccionada</span>'
+        'SATURACIÓN DEL SISTEMA PÚBLICO — % sobre carga máxima (6am = 100%) · '
+        '<span style="color:#F7941D">franja seleccionada resaltada</span>'
         '</div>',
         unsafe_allow_html=True,
     )
-    render_distribucion_horaria_chart(franja_sel)
+    render_timeline_saturacion(franja_sel)
 
 with col_modal:
     st.markdown(

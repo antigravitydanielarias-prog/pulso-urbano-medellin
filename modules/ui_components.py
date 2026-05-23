@@ -125,7 +125,118 @@ def render_amva_kpis() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Gráfico distribución horaria (datos reales AMVA 2025)
+# Línea de tiempo de saturación del sistema (datos reales AMVA 2025)
+# ---------------------------------------------------------------------------
+
+def render_timeline_saturacion(franja_sel: str = "tarde") -> None:
+    """
+    Línea de tiempo que muestra el % de carga del transporte público
+    sobre su máximo horario (hora 6am = 100%).
+
+    Destaca zonas de alerta (>75%) y crítica (>90%), y resalta la
+    franja horaria seleccionada en los filtros.
+
+    Responde a: ¿cuántas horas al día el sistema está realmente colapsado?
+    """
+    horas   = AMVA_HORARIO["hora"]
+    publico = AMVA_HORARIO["publico"]
+    max_pub = max(publico)
+    carga   = [round(v / max_pub * 100, 1) for v in publico]
+
+    h_start, h_end = AMVA_FRANJA_HORAS.get(franja_sel, (13, 20))
+
+    horas_sobre_75 = sum(1 for c in carga if c >= 75)
+    horas_sobre_90 = sum(1 for c in carga if c >= 90)
+
+    fig = go.Figure()
+
+    # Zonas de alerta (fondos)
+    fig.add_hrect(y0=90, y1=107,
+                  fillcolor="rgba(255,75,92,0.07)",  line_width=0, layer="below")
+    fig.add_hrect(y0=75, y1=90,
+                  fillcolor="rgba(255,152,0,0.07)", line_width=0, layer="below")
+
+    # Líneas de umbral
+    fig.add_hline(y=90, line_dash="dash",
+                  line_color="rgba(255,75,92,0.55)", line_width=1.2)
+    fig.add_hline(y=75, line_dash="dash",
+                  line_color="rgba(255,152,0,0.55)", line_width=1.2)
+
+    fig.add_annotation(x=22.8, y=92, text="Crítico 90%", showarrow=False,
+                       font=dict(size=9, color="rgba(255,75,92,0.9)"), xanchor="right")
+    fig.add_annotation(x=22.8, y=77, text="Alerta 75%", showarrow=False,
+                       font=dict(size=9, color="rgba(255,152,0,0.9)"), xanchor="right")
+
+    # Área bajo la curva
+    fig.add_trace(go.Scatter(
+        x=horas, y=carga,
+        fill="tozeroy",
+        fillcolor="rgba(64,196,255,0.10)",
+        line=dict(color="#40C4FF", width=2.2, shape="spline"),
+        mode="lines",
+        name="Carga sistema público",
+        hovertemplate="<b>%{x}:00 h</b> — carga: <b>%{y:.0f}%</b><extra></extra>",
+    ))
+
+    # Marcadores: puntos sobre umbral
+    criticos_x = [h for h, c in zip(horas, carga) if c >= 75]
+    criticos_y = [c for c in carga if c >= 75]
+    criticos_c = ["#FF4B5C" if c >= 90 else "#FF9800" for c in criticos_y]
+    fig.add_trace(go.Scatter(
+        x=criticos_x, y=criticos_y,
+        mode="markers",
+        marker=dict(size=8, color=criticos_c,
+                    line=dict(color="#0A0E1A", width=1.5)),
+        showlegend=False,
+        hovertemplate="%{x}:00 h — %{y:.0f}%<extra></extra>",
+    ))
+
+    # Franja seleccionada
+    fig.add_vrect(x0=h_start, x1=h_end,
+                  fillcolor="rgba(247,148,29,0.09)", line_width=0)
+    fig.add_vline(x=h_start, line_dash="dot",
+                  line_color="rgba(247,148,29,0.7)", line_width=1.5)
+    fig.add_vline(x=h_end,   line_dash="dot",
+                  line_color="rgba(247,148,29,0.7)", line_width=1.5)
+
+    # Anotación de resumen
+    fig.add_annotation(
+        x=0.01, y=0.96, xref="paper", yref="paper",
+        text=f"⚠ <b>{horas_sobre_75}h</b>/día sobre 75%  ·  <b>{horas_sobre_90}h</b>/día sobre 90%",
+        showarrow=False,
+        font=dict(size=10, color="#FF9800"),
+        bgcolor="rgba(13,17,23,0.75)",
+        borderpad=5,
+        align="left",
+    )
+
+    tick_vals  = list(range(0, 24, 3))
+    tick_texts = ["12am", "3am", "6am", "9am", "12pm", "3pm", "6pm", "9pm"]
+
+    fig.update_layout(
+        height=215,
+        margin=dict(l=0, r=0, t=4, b=0),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        xaxis=dict(
+            showgrid=False, color="#8892A4", tickfont=dict(size=9),
+            tickmode="array", tickvals=tick_vals, ticktext=tick_texts,
+            range=[-0.5, 23.5],
+        ),
+        yaxis=dict(
+            showgrid=True, gridcolor="rgba(255,255,255,0.05)",
+            color="#8892A4", tickfont=dict(size=9),
+            ticksuffix="%", range=[0, 108],
+        ),
+        showlegend=False,
+        hovermode="x unified",
+    )
+
+    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+
+
+# ---------------------------------------------------------------------------
+# Gráfico distribución horaria apilada (datos reales AMVA 2025)
 # ---------------------------------------------------------------------------
 
 def render_distribucion_horaria_chart(franja_sel: str = "tarde") -> None:
