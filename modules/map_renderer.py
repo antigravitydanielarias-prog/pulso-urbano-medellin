@@ -194,8 +194,9 @@ def _add_paradas(m: folium.Map, df: pd.DataFrame) -> None:
 
 
 def _add_bus_routes(m: folium.Map, df: pd.DataFrame) -> None:
-    """Dibuja rutas de bus como polilíneas con paradas."""
-    group = folium.FeatureGroup(name="🚍 Rutas de bus", show=False)
+    """Dibuja rutas de bus como polilíneas con marcadores en cada parada."""
+    # show=True: la capa es visible apenas se agrega (sin necesidad de LayerControl)
+    group = folium.FeatureGroup(name="🚍 Rutas de bus", show=True)
 
     route_colors = {
         130: "#FF7043",
@@ -211,32 +212,46 @@ def _add_bus_routes(m: folium.Map, df: pd.DataFrame) -> None:
 
     for route_id, sub in df.groupby("route_id"):
         sub = sub.sort_values("order")
-        coords = list(zip(sub["lat"], sub["lon"]))
+        coords = list(zip(sub["lat"].astype(float), sub["lon"].astype(float)))
         if len(coords) < 2:
             continue
 
-        color = route_colors.get(int(route_id), None) or "#78909C"
+        rid   = int(route_id)
+        color = route_colors.get(rid, "#78909C")
 
+        # Línea de la ruta — más gruesa y sólida para visibilidad
         folium.PolyLine(
             locations=coords,
             color=color,
-            weight=2.5,
-            opacity=0.7,
-            tooltip=f"Ruta {route_id}",
-            dash_array="6 4",
+            weight=4,
+            opacity=0.85,
+            tooltip=f"Ruta {rid}",
         ).add_to(group)
 
-        # Primera y última parada como marcador
-        for idx, (_, stop) in enumerate([(0, sub.iloc[0]), (-1, sub.iloc[-1])]):
+        # Todas las paradas intermedias como puntos pequeños
+        for _, stop in sub.iterrows():
             folium.CircleMarker(
-                location=[stop["lat"], stop["lon"]],
-                radius=4,
+                location=[float(stop["lat"]), float(stop["lon"])],
+                radius=3,
                 color=color,
+                weight=1.5,
+                fill=True,
+                fill_color="#FFFFFF",
+                fill_opacity=0.85,
+                tooltip=f"{stop.get('stop_name', '')} · Ruta {rid}",
+            ).add_to(group)
+
+        # Marcadores terminales (primera y última parada) más grandes
+        for stop_row in [sub.iloc[0], sub.iloc[-1]]:
+            folium.CircleMarker(
+                location=[float(stop_row["lat"]), float(stop_row["lon"])],
+                radius=6,
+                color="#FFFFFF",
                 weight=2,
                 fill=True,
                 fill_color=color,
-                fill_opacity=0.9,
-                tooltip=stop.get("stop_name", f"Ruta {route_id}"),
+                fill_opacity=1.0,
+                tooltip=f"Terminal: {stop_row.get('stop_name', '')} · Ruta {rid}",
             ).add_to(group)
 
     group.add_to(m)
