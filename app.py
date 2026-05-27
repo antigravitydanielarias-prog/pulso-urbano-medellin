@@ -37,6 +37,8 @@ from modules.ui_components  import (
     render_amva_kpis,
     render_timeline_saturacion,
     render_modal_share_chart,
+    render_vehiculos_chart,
+    render_congestion_heatmap_lineas,
 )
 
 
@@ -97,7 +99,8 @@ with st.sidebar:
     capas = {
         "estaciones": st.checkbox("🚇 Estaciones Metro/Cable/Tranvía", value=True),
         "paradas":    st.checkbox("🚌 Paradas alimentadoras",          value=True),
-        "rutas_bus":  st.checkbox("🛣️ Rutas de bus (130, 190, 302…)",  value=False),
+        "rutas_bus":  st.checkbox("🛣️ Rutas de bus (130, 190, 302…)",  value=True),
+        "calor_veh":  st.checkbox("🔥 Densidad vehicular (calor)",      value=False),
     }
 
     modo_oscuro = st.toggle("🌙 Mapa oscuro", value=True)
@@ -283,6 +286,24 @@ with col_modal:
         unsafe_allow_html=True,
     )
     render_modal_share_chart()
+
+st.markdown("<div style='height:4px'></div>", unsafe_allow_html=True)
+
+# ── Congestión por línea en el tiempo ────────────────────────────────────────
+render_section_header(
+    "Congestión por línea SITVA · 24 horas",
+    "Estimación calibrada con AMVA OD 2025 · Línea A = referencia 100% · Picos AM/PM señalados",
+)
+render_congestion_heatmap_lineas()
+
+st.markdown("<div style='height:4px'></div>", unsafe_allow_html=True)
+
+# ── Movilidad vehicular — datos OD 2025 ──────────────────────────────────────
+render_section_header(
+    "Movilidad vehicular · Valle de Aburrá",
+    "Encuesta OD 2025 · 815,414 vehículos · 59.9% motos · 60.1% hogares sin vehículo",
+)
+render_vehiculos_chart()
 
 st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
 

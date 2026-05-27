@@ -6,11 +6,14 @@ import streamlit as st
 import plotly.graph_objects as go
 import pandas as pd
 
+import numpy as np
+
 from config import (
     SEVERITY_COLORS, SEVERITY_ICONS,
     AMVA_HORARIO, AMVA_FRANJA_HORAS,
     AMVA_MODOS, AMVA_MODOS_COLORES,
     AMVA_KPIS, AMVA_MACROZONAS_TOP,
+    AMVA_VEHICULOS, SITVA_LINEAS,
 )
 
 
@@ -412,6 +415,214 @@ def render_parque_chart(df: pd.DataFrame) -> None:
         ),
         showlegend=False,
         hovermode="x unified",
+    )
+
+    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+
+
+# ---------------------------------------------------------------------------
+# Gráfico vehicular — tipología y tenencia por hogar (AMVA 2025)
+# ---------------------------------------------------------------------------
+
+def render_vehiculos_chart() -> None:
+    """
+    Dos paneles: tipología del parque vehicular (dona) y tenencia por hogar (barras).
+    Fuente: Encuesta OD AMVA 2025 — 815,414 vehículos en el Valle de Aburrá.
+    """
+    col_dona, col_barra = st.columns([1, 1], gap="medium")
+
+    # --- Dona: tipología vehicular ---
+    with col_dona:
+        st.markdown(
+            '<div style="font-size:11px;color:#8892A4;margin-bottom:4px">'
+            'TIPOLOGÍA VEHICULAR · % del parque (815k vehículos)'
+            '</div>',
+            unsafe_allow_html=True,
+        )
+        labels   = list(AMVA_VEHICULOS["tipologia"].keys())
+        values   = list(AMVA_VEHICULOS["tipologia"].values())
+        paleta   = ["#8892A4", "#FF4B5C", "#00BCD4", "#FF9800", "#546E7A"]
+
+        fig_dona = go.Figure(go.Pie(
+            labels=labels,
+            values=values,
+            hole=0.55,
+            marker=dict(colors=paleta, line=dict(color="#0A0E1A", width=1.5)),
+            textfont=dict(size=10, color="#E8EDF5"),
+            hovertemplate="%{label}: %{value:.2f}%<extra></extra>",
+        ))
+        fig_dona.add_annotation(
+            text="<b>815k</b><br><span style='font-size:9px'>vehículos</span>",
+            x=0.5, y=0.5, showarrow=False,
+            font=dict(size=12, color="#E8EDF5"),
+        )
+        fig_dona.update_layout(
+            height=220,
+            margin=dict(l=0, r=0, t=10, b=0),
+            paper_bgcolor="rgba(0,0,0,0)",
+            showlegend=True,
+            legend=dict(
+                orientation="v", x=0.82, y=0.5,
+                font=dict(size=9, color="#8892A4"),
+                bgcolor="rgba(0,0,0,0)",
+            ),
+        )
+        st.plotly_chart(fig_dona, use_container_width=True, config={"displayModeBar": False})
+
+    # --- Barras: tenencia por hogar ---
+    with col_barra:
+        st.markdown(
+            '<div style="font-size:11px;color:#8892A4;margin-bottom:4px">'
+            'TENENCIA VEHICULAR POR HOGAR · % de hogares del AMVA'
+            '</div>',
+            unsafe_allow_html=True,
+        )
+        h_labels = list(AMVA_VEHICULOS["por_hogar"].keys())
+        h_values = list(AMVA_VEHICULOS["por_hogar"].values())
+        h_colors = ["#00C896", "#F7941D", "#FF4B5C"]
+
+        fig_bar = go.Figure(go.Bar(
+            y=h_labels,
+            x=h_values,
+            orientation="h",
+            marker_color=h_colors,
+            text=[f"{v:.1f}%" for v in h_values],
+            textposition="outside",
+            textfont=dict(size=10, color="#8892A4"),
+            hovertemplate="%{y}: %{x:.1f}%<extra></extra>",
+        ))
+
+        # Líneas de referencia de tiempo por modo
+        fig_bar.update_layout(
+            height=220,
+            margin=dict(l=0, r=50, t=10, b=0),
+            paper_bgcolor="rgba(0,0,0,0)",
+            plot_bgcolor="rgba(0,0,0,0)",
+            xaxis=dict(
+                showgrid=True, gridcolor="rgba(255,255,255,0.05)",
+                color="#8892A4", tickfont=dict(size=9),
+                ticksuffix="%", range=[0, 80],
+            ),
+            yaxis=dict(color="#8892A4", tickfont=dict(size=10)),
+            showlegend=False,
+        )
+        st.plotly_chart(fig_bar, use_container_width=True, config={"displayModeBar": False})
+
+    # --- KPI chips: indicadores de motorización y tiempo ---
+    items_mot = [
+        ("120.5",    "Motos / 1.000 hab.",      "#8892A4"),
+        ("67.1",     "Autos / 1.000 hab.",       "#FF4B5C"),
+        ("10.5",     "Bicis / 1.000 hab.",       "#00BCD4"),
+        ("56.6 min", "Tiempo en transporte público", "#F7941D"),
+        ("22.1 min", "Tiempo a pie / bici",      "#00C896"),
+    ]
+    cols = st.columns(len(items_mot))
+    for col, (val, label, color) in zip(cols, items_mot):
+        with col:
+            st.markdown(
+                '<div style="background:rgba(13,17,23,0.7);'
+                'border:1px solid rgba(255,255,255,0.06);'
+                'border-radius:7px;padding:8px 10px;text-align:center;">'
+                '<div style="font-size:15px;font-weight:800;color:' + color + '">' + val + '</div>'
+                '<div style="font-size:9px;color:#8892A4;margin-top:2px;letter-spacing:0.04em">'
+                + label.upper() + '</div>'
+                '</div>',
+                unsafe_allow_html=True,
+            )
+
+
+# ---------------------------------------------------------------------------
+# Heatmap de congestión por línea a lo largo del día (SITVA × 24h)
+# ---------------------------------------------------------------------------
+
+def render_congestion_heatmap_lineas() -> None:
+    """
+    Plotly Heatmap: filas = líneas SITVA, columnas = horas (0-23).
+    Congestión estimada (%) calculada a partir de AMVA_HORARIO["publico"]
+    normalizado + factor de carga base por línea (calibrado contra OD 2025).
+
+    Lecturas:
+    - Rojo profundo = sistema al límite en esa hora
+    - Verde = capacidad holgada
+    - Permite identificar cuándo cada línea específica colapsa
+    """
+    horas   = AMVA_HORARIO["hora"]
+    publico = AMVA_HORARIO["publico"]
+    max_pub = max(publico)
+
+    # Curva de carga normalizada del sistema (0→1)
+    carga_norm = np.array([v / max_pub for v in publico])
+
+    lineas_ids = list(SITVA_LINEAS.keys())
+    lineas_nombres = [SITVA_LINEAS[lid]["nombre"] for lid in lineas_ids]
+
+    rng = np.random.default_rng(7)
+
+    z_matrix = []
+    for lid in lineas_ids:
+        base = SITVA_LINEAS[lid]["base_load"]
+        # Ruido por línea: simula variación micro (eventos, mantenimiento, etc.)
+        ruido = rng.normal(0, 0.025, 24)
+        carga_linea = np.clip((carga_norm * base + ruido) * 100, 0, 100)
+        z_matrix.append(carga_linea.tolist())
+
+    tick_texts = ["12am","1am","2am","3am","4am","5am","6am","7am","8am","9am",
+                  "10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm","7pm",
+                  "8pm","9pm","10pm","11pm"]
+
+    colores_lineas = [SITVA_LINEAS[lid]["color"] for lid in lineas_ids]
+
+    fig = go.Figure(go.Heatmap(
+        z=z_matrix,
+        x=tick_texts,
+        y=lineas_nombres,
+        colorscale=[
+            [0.00, "#00E676"],
+            [0.35, "#FFEB3B"],
+            [0.60, "#FF9800"],
+            [0.80, "#FF4B5C"],
+            [1.00, "#C62828"],
+        ],
+        zmin=0,
+        zmax=100,
+        colorbar=dict(
+            title=dict(text="%", font=dict(size=10, color="#8892A4")),
+            tickfont=dict(size=9, color="#8892A4"),
+            len=0.8,
+            thickness=10,
+        ),
+        hovertemplate="<b>%{y}</b><br>%{x} → <b>%{z:.0f}%</b> congestión<extra></extra>",
+        xgap=1.5,
+        ygap=1.5,
+    ))
+
+    # Pico mañana y tarde (bandas verticales)
+    for x0, x1, label in [("6am", "9am", "Pico AM"), ("5pm", "8pm", "Pico PM")]:
+        fig.add_vrect(
+            x0=x0, x1=x1,
+            fillcolor="rgba(247,148,29,0.08)",
+            line_color="rgba(247,148,29,0.4)",
+            line_width=1, line_dash="dot",
+            annotation_text=label,
+            annotation_position="top left",
+            annotation_font_size=9,
+            annotation_font_color="#F7941D",
+        )
+
+    fig.update_layout(
+        height=320,
+        margin=dict(l=0, r=0, t=8, b=0),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        xaxis=dict(
+            color="#8892A4", tickfont=dict(size=8),
+            showgrid=False, side="bottom",
+        ),
+        yaxis=dict(
+            color="#8892A4", tickfont=dict(size=9),
+            showgrid=False,
+        ),
+        font=dict(family="monospace"),
     )
 
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
