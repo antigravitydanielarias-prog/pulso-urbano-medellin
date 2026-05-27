@@ -13,8 +13,31 @@ from config import (
     AMVA_HORARIO, AMVA_FRANJA_HORAS,
     AMVA_MODOS, AMVA_MODOS_COLORES,
     AMVA_KPIS, AMVA_MACROZONAS_TOP,
-    AMVA_VEHICULOS, SITVA_LINEAS,
 )
+
+# Importación separada para constantes añadidas en v2 — tolerante a fallos
+try:
+    from config import AMVA_VEHICULOS, SITVA_LINEAS
+except ImportError:
+    AMVA_VEHICULOS = {
+        "tipologia": {"Motocicleta": 59.94, "Automóvil": 31.28, "Bicicleta": 5.2, "Camioneta": 2.9, "Otro": 0.69},
+        "por_hogar": {"Sin vehículo": 60.11, "Un vehículo": 31.97, "Dos o más": 7.92},
+        "tiempo_modo": {"Público": 56.58, "Privado": 39.03, "Informal": 38.87, "No motorizado": 22.1},
+        "total_vehiculos": 815414, "motos_1000": 120.5, "autos_1000": 67.13, "bici_1000": 10.46,
+    }
+    SITVA_LINEAS = {
+        "A": {"nombre": "Línea A",    "tipo": "Metro",      "base_load": 1.00, "color": "#F7941D"},
+        "B": {"nombre": "Línea B",    "tipo": "Metro",      "base_load": 0.72, "color": "#2196F3"},
+        "K": {"nombre": "Cable K",    "tipo": "Metrocable", "base_load": 0.55, "color": "#9C27B0"},
+        "J": {"nombre": "Cable J",    "tipo": "Metrocable", "base_load": 0.48, "color": "#00BCD4"},
+        "L": {"nombre": "Cable L",    "tipo": "Metrocable", "base_load": 0.31, "color": "#4CAF50"},
+        "M": {"nombre": "Cable M",    "tipo": "Metrocable", "base_load": 0.42, "color": "#E91E63"},
+        "H": {"nombre": "Cable H",    "tipo": "Metrocable", "base_load": 0.38, "color": "#FF5722"},
+        "T": {"nombre": "Tranvía T",  "tipo": "Tranvía",    "base_load": 0.61, "color": "#FFEB3B"},
+        "P": {"nombre": "Metro Plus P","tipo": "Metro Plus","base_load": 0.53, "color": "#795548"},
+        "1": {"nombre": "Metro Plus 1","tipo": "Metro Plus","base_load": 0.46, "color": "#00E676"},
+        "2": {"nombre": "Metro Plus 2","tipo": "Metro Plus","base_load": 0.44, "color": "#40C4FF"},
+    }
 
 
 # ---------------------------------------------------------------------------

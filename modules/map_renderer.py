@@ -11,8 +11,13 @@ from config import (
     MEDELLIN_CENTER, MEDELLIN_ZOOM,
     LINE_COLORS, SYSTEM_COLORS,
     MAP_TILE_DARK, MAP_TILE_LIGHT,
-    AMVA_VEHICULOS, AMVA_HORARIO,
 )
+
+try:
+    from config import AMVA_VEHICULOS, AMVA_HORARIO
+except ImportError:
+    AMVA_VEHICULOS = {}
+    AMVA_HORARIO = {"privado": [0] * 24}
 
 
 # ---------------------------------------------------------------------------
