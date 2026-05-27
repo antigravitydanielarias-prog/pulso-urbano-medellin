@@ -2,6 +2,7 @@
 # modules/data_loader.py — Carga y conversión de datos geoespaciales
 # =============================================================================
 
+import json
 import math
 import os
 import numpy as np
@@ -97,8 +98,17 @@ def load_parque_automotor() -> pd.DataFrame:
 
 @st.cache_data(show_spinner=False)
 def load_rutas_bus() -> pd.DataFrame:
-    """Carga rutas de bus (ya en WGS84)."""
-    return pd.read_csv(_path("rutas_bus"))
+    """Carga rutas de bus desde JSON o CSV (ya en WGS84)."""
+    path = _path("rutas_bus")
+    if path.endswith(".json"):
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        df = pd.DataFrame(data)
+    else:
+        df = pd.read_csv(path)
+    # Sanity check coordenadas
+    df = df[df["lat"].between(6.0, 6.6) & df["lon"].between(-76.1, -75.3)]
+    return df
 
 
 # ---------------------------------------------------------------------------

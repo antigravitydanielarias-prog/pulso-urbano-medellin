@@ -12,7 +12,7 @@ DATA_FILES = {
     "alimentadoras": "Rutas_Alimentadoras.csv",
     "paradas":       "alimentadora_parada.csv",
     "parque":        "Parque_automotor_historico.csv",
-    "rutas_bus":     "rutas_medellin_dataset.csv",
+    "rutas_bus":     "rutas_medellin_dataset.json",
 }
 
 MEDELLIN_CENTER = [6.2442, -75.5812]

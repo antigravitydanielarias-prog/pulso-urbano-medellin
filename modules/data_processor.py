@@ -32,8 +32,10 @@ def filter_estaciones(
     result = df.copy()
 
     # --- Filtro por sistema -----------------------------------------------
-    if sistemas:
-        result = result[result["sistema_label"].isin(sistemas)]
+    # "Vehículos Particulares" es un pseudo-sistema para análisis: no filtra estaciones
+    sistemas_transit = [s for s in sistemas if "Vehículos" not in s]
+    if sistemas_transit:
+        result = result[result["sistema_label"].isin(sistemas_transit)]
 
     # --- Filtro por línea --------------------------------------------------
     if lineas:

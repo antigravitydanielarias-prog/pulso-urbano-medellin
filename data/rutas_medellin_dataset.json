@@ -1,0 +1,2802 @@
+[
+  {
+    "route_id": 130,
+    "stop_name": "Uva Tesoro Carrera 30 1B Sur",
+    "lat": 6.2089,
+    "lon": -75.5647,
+    "order": 1
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Corporación Casa María y El Niño Carrera 29C 3B Sur",
+    "lat": 6.2096,
+    "lon": -75.5653,
+    "order": 2
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Supermercado La Vaquita Diagonal 29D 9 Sur",
+    "lat": 6.2102,
+    "lon": -75.566,
+    "order": 3
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Los Balsos Av El Poblado",
+    "lat": 6.2115,
+    "lon": -75.5675,
+    "order": 4
+  },
+  {
+    "route_id": 130,
+    "stop_name": "CC Santa Fe Av El Poblado",
+    "lat": 6.2128,
+    "lon": -75.5683,
+    "order": 5
+  },
+  {
+    "route_id": 130,
+    "stop_name": "CC Río Sur Av El Poblado 6 Sur",
+    "lat": 6.214,
+    "lon": -75.5692,
+    "order": 6
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Mall Milla de Oro Av El Poblado 1A Sur",
+    "lat": 6.2152,
+    "lon": -75.57,
+    "order": 7
+  },
+  {
+    "route_id": 130,
+    "stop_name": "CC La Estrada Av El Poblado 1 Sur",
+    "lat": 6.216,
+    "lon": -75.5708,
+    "order": 8
+  },
+  {
+    "route_id": 130,
+    "stop_name": "San Fernando Plaza Av El Poblado 18",
+    "lat": 6.2172,
+    "lon": -75.5715,
+    "order": 9
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Clínica Medellín Av El Poblado 72",
+    "lat": 6.2185,
+    "lon": -75.5722,
+    "order": 10
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Castropol Av El Poblado",
+    "lat": 6.22,
+    "lon": -75.5735,
+    "order": 11
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Centro Empresarial Block Cr 43A 17",
+    "lat": 6.221,
+    "lon": -75.5745,
+    "order": 12
+  },
+  {
+    "route_id": 130,
+    "stop_name": "CC Automotriz Cr 43A 19",
+    "lat": 6.222,
+    "lon": -75.5752,
+    "order": 13
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Dislicores Cr 43A 25A",
+    "lat": 6.2235,
+    "lon": -75.5765,
+    "order": 14
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Cl 29 Cr 43A",
+    "lat": 6.2245,
+    "lon": -75.5775,
+    "order": 15
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Hospital General Av Palacé 32",
+    "lat": 6.242,
+    "lon": -75.5845,
+    "order": 16
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Palacé con Av 33",
+    "lat": 6.2405,
+    "lon": -75.584,
+    "order": 17
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Cr 50 Cl 45 (Guayaquil)",
+    "lat": 6.244,
+    "lon": -75.59,
+    "order": 18
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Cr 50 Cl 50",
+    "lat": 6.2475,
+    "lon": -75.5915,
+    "order": 19
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Cr 50 Cl 51",
+    "lat": 6.2485,
+    "lon": -75.592,
+    "order": 20
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Cr 50 Cl 53",
+    "lat": 6.25,
+    "lon": -75.593,
+    "order": 21
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Av Oriental Cl 49",
+    "lat": 6.246,
+    "lon": -75.588,
+    "order": 22
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Parque San Antonio",
+    "lat": 6.244,
+    "lon": -75.594,
+    "order": 23
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Estación Esso Cr 43A 41",
+    "lat": 6.232,
+    "lon": -75.5785,
+    "order": 24
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Cr 46 Cl 38",
+    "lat": 6.235,
+    "lon": -75.58,
+    "order": 25
+  },
+  {
+    "route_id": 130,
+    "stop_name": "CC Almacentro Av El Poblado",
+    "lat": 6.228,
+    "lon": -75.576,
+    "order": 26
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Av El Poblado Cl 30",
+    "lat": 6.2265,
+    "lon": -75.575,
+    "order": 27
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Castropol Colinas del Poblado",
+    "lat": 6.2205,
+    "lon": -75.5738,
+    "order": 29
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Parque El Poblado Cl 10",
+    "lat": 6.2085,
+    "lon": -75.568,
+    "order": 30
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Parque Lleras Cl 10 Cr 38",
+    "lat": 6.2098,
+    "lon": -75.5672,
+    "order": 31
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Zona Rosa Cl 10 Cr 35",
+    "lat": 6.2108,
+    "lon": -75.5665,
+    "order": 32
+  },
+  {
+    "route_id": 130,
+    "stop_name": "CC Vizcaya Cl 10 Cr 32B",
+    "lat": 6.212,
+    "lon": -75.5658,
+    "order": 33
+  },
+  {
+    "route_id": 130,
+    "stop_name": "CC Pinar del Río Cl 10 Cr 30A",
+    "lat": 6.2135,
+    "lon": -75.565,
+    "order": 34
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Hotel Best Western Trv Inferior Cl 10",
+    "lat": 6.2145,
+    "lon": -75.566,
+    "order": 35
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Trv Inferior Cl 7B",
+    "lat": 6.2155,
+    "lon": -75.5668,
+    "order": 36
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Trv Inferior Cl 5F",
+    "lat": 6.2165,
+    "lon": -75.5675,
+    "order": 37
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Transversal Inferior 2-70",
+    "lat": 6.2175,
+    "lon": -75.5682,
+    "order": 38
+  },
+  {
+    "route_id": 130,
+    "stop_name": "Mall Plaza Cr 31",
+    "lat": 6.2185,
+    "lon": -75.569,
+    "order": 39
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Exito El Poblado",
+    "lat": 6.2086,
+    "lon": -75.5673,
+    "order": 1
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Calle 10 43c23",
+    "lat": 6.2098,
+    "lon": -75.567,
+    "order": 2
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Parque El Poblado",
+    "lat": 6.2083,
+    "lon": -75.5676,
+    "order": 3
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Av El Poblado 7d",
+    "lat": 6.2065,
+    "lon": -75.5668,
+    "order": 4
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Clinica Medellin Poblado",
+    "lat": 6.2047,
+    "lon": -75.567,
+    "order": 5
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Gimnasio Santillana",
+    "lat": 6.2039,
+    "lon": -75.5665,
+    "order": 6
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Mall Milla de Oro",
+    "lat": 6.2009,
+    "lon": -75.5674,
+    "order": 7
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Loma Los Gonzalez",
+    "lat": 6.1985,
+    "lon": -75.5649,
+    "order": 8
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Casa Maria y El Niño",
+    "lat": 6.1972,
+    "lon": -75.5635,
+    "order": 9
+  },
+  {
+    "route_id": 132,
+    "stop_name": "UVA El Tesoro",
+    "lat": 6.1963,
+    "lon": -75.5627,
+    "order": 10
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Visitacion",
+    "lat": 6.1978,
+    "lon": -75.5642,
+    "order": 11
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Bosques de la Cascada",
+    "lat": 6.1989,
+    "lon": -75.5651,
+    "order": 12
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Los Balsos Av Poblado",
+    "lat": 6.1942,
+    "lon": -75.5655,
+    "order": 13
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Carulla Oviedo",
+    "lat": 6.1921,
+    "lon": -75.5683,
+    "order": 14
+  },
+  {
+    "route_id": 132,
+    "stop_name": "INEM Las Vegas",
+    "lat": 6.191,
+    "lon": -75.569,
+    "order": 15
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Politecnico JIC",
+    "lat": 6.1905,
+    "lon": -75.5695,
+    "order": 16
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Las Vegas Calle 10",
+    "lat": 6.209,
+    "lon": -75.5685,
+    "order": 17
+  },
+  {
+    "route_id": 132,
+    "stop_name": "DIAN Calle 14",
+    "lat": 6.2118,
+    "lon": -75.569,
+    "order": 18
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Telemedellin",
+    "lat": 6.214,
+    "lon": -75.5695,
+    "order": 19
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Barrio Colombia",
+    "lat": 6.2281,
+    "lon": -75.5689,
+    "order": 20
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Premium Plaza",
+    "lat": 6.2325,
+    "lon": -75.5704,
+    "order": 21
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Instituto Mariano Moreno",
+    "lat": 6.234,
+    "lon": -75.571,
+    "order": 22
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Hospital General",
+    "lat": 6.2363,
+    "lon": -75.5721,
+    "order": 23
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Exposiciones",
+    "lat": 6.2395,
+    "lon": -75.5732,
+    "order": 24
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Palace Av 33",
+    "lat": 6.2408,
+    "lon": -75.574,
+    "order": 25
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Autoamerica Toyota",
+    "lat": 6.242,
+    "lon": -75.5745,
+    "order": 26
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Carrera 50 41-40",
+    "lat": 6.2435,
+    "lon": -75.575,
+    "order": 27
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Parque San Antonio",
+    "lat": 6.2476,
+    "lon": -75.5691,
+    "order": 28
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Av Oriental",
+    "lat": 6.2485,
+    "lon": -75.568,
+    "order": 29
+  },
+  {
+    "route_id": 132,
+    "stop_name": "San Diego",
+    "lat": 6.2309,
+    "lon": -75.5665,
+    "order": 30
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Almacentro",
+    "lat": 6.226,
+    "lon": -75.5685,
+    "order": 31
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Perpetuo Socorro",
+    "lat": 6.2245,
+    "lon": -75.5695,
+    "order": 32
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Ciudad del Rio",
+    "lat": 6.223,
+    "lon": -75.5702,
+    "order": 33
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Homecenter Industriales",
+    "lat": 6.2295,
+    "lon": -75.5735,
+    "order": 34
+  },
+  {
+    "route_id": 132,
+    "stop_name": "Monterrey",
+    "lat": 6.23,
+    "lon": -75.574,
+    "order": 35
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Parque San Antonio",
+    "lat": 6.244,
+    "lon": -75.594,
+    "order": 1
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Estación Esso Cr 43A 41-16",
+    "lat": 6.232,
+    "lon": -75.5785,
+    "order": 2
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Carrera 46 40-23",
+    "lat": 6.2365,
+    "lon": -75.5805,
+    "order": 3
+  },
+  {
+    "route_id": 133,
+    "stop_name": "CC Almacentro Av El Poblado",
+    "lat": 6.228,
+    "lon": -75.576,
+    "order": 4
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Av El Poblado Cl 30",
+    "lat": 6.2265,
+    "lon": -75.575,
+    "order": 5
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Centro Automotriz Cr 43A 25A-34",
+    "lat": 6.2235,
+    "lon": -75.5765,
+    "order": 6
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Telemedellín Cr 43F 17",
+    "lat": 6.2215,
+    "lon": -75.5748,
+    "order": 7
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Barrio Manila Cr 43F 12",
+    "lat": 6.22,
+    "lon": -75.5738,
+    "order": 8
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Éxito Poblado / Monterrey",
+    "lat": 6.2095,
+    "lon": -75.5685,
+    "order": 9
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Parque El Poblado Cl 10",
+    "lat": 6.2085,
+    "lon": -75.568,
+    "order": 10
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Parque Lleras Cl 10 Cr 38",
+    "lat": 6.2098,
+    "lon": -75.5672,
+    "order": 11
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Zona Rosa Cl 10 Cr 35",
+    "lat": 6.2108,
+    "lon": -75.5665,
+    "order": 12
+  },
+  {
+    "route_id": 133,
+    "stop_name": "CC Vizcaya Cl 10 Cr 32B",
+    "lat": 6.212,
+    "lon": -75.5658,
+    "order": 13
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Ed. Bosques de La Concha Cl 10",
+    "lat": 6.213,
+    "lon": -75.565,
+    "order": 14
+  },
+  {
+    "route_id": 133,
+    "stop_name": "CC Pinar del Río Cl 10 Cr 30A",
+    "lat": 6.2135,
+    "lon": -75.565,
+    "order": 15
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Hotel Best Western Trv Inferior Cl 10",
+    "lat": 6.2145,
+    "lon": -75.566,
+    "order": 16
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Trv Inferior Cl 7B",
+    "lat": 6.2155,
+    "lon": -75.5668,
+    "order": 17
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Trv Inferior Cl 5F",
+    "lat": 6.2165,
+    "lon": -75.5675,
+    "order": 18
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Transversal Inferior 2-70",
+    "lat": 6.2175,
+    "lon": -75.5682,
+    "order": 19
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Mall Plaza Cr 31",
+    "lat": 6.2185,
+    "lon": -75.569,
+    "order": 20
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Mall La Visitación",
+    "lat": 6.2195,
+    "lon": -75.5705,
+    "order": 21
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Urbanización Surabaya",
+    "lat": 6.2205,
+    "lon": -75.5715,
+    "order": 22
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Campestre Drive In",
+    "lat": 6.2215,
+    "lon": -75.5725,
+    "order": 23
+  },
+  {
+    "route_id": 133,
+    "stop_name": "San Lucas Trv Inferior",
+    "lat": 6.2025,
+    "lon": -75.5605,
+    "order": 24
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Loma San Lucas",
+    "lat": 6.2015,
+    "lon": -75.5595,
+    "order": 25
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Iglesia San Lucas",
+    "lat": 6.2005,
+    "lon": -75.5585,
+    "order": 26
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Seniors Club San Lucas Cr 25B",
+    "lat": 6.1995,
+    "lon": -75.5575,
+    "order": 27
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Mall Complex Tv Superior",
+    "lat": 6.2055,
+    "lon": -75.5555,
+    "order": 28
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Edificio Cibeles Tv Superior Cl 7 Sur",
+    "lat": 6.207,
+    "lon": -75.5565,
+    "order": 29
+  },
+  {
+    "route_id": 133,
+    "stop_name": "El Tesoro",
+    "lat": 6.209,
+    "lon": -75.5575,
+    "order": 30
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Mall del Este",
+    "lat": 6.2105,
+    "lon": -75.5585,
+    "order": 31
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Edificio Montecatini Cr 29",
+    "lat": 6.212,
+    "lon": -75.5595,
+    "order": 32
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Edificio El Vergel",
+    "lat": 6.2135,
+    "lon": -75.5605,
+    "order": 33
+  },
+  {
+    "route_id": 133,
+    "stop_name": "CC Vizcaya Cl 10A Cr 32B",
+    "lat": 6.2125,
+    "lon": -75.5655,
+    "order": 34
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Hotel 10 Cl 10A",
+    "lat": 6.2115,
+    "lon": -75.5662,
+    "order": 35
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Ciudad del Río Cr 48 Cl 17",
+    "lat": 6.225,
+    "lon": -75.5835,
+    "order": 37
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Mercados del Río Cr 48 Cl 24",
+    "lat": 6.2275,
+    "lon": -75.585,
+    "order": 38
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Pier 30 Outlet",
+    "lat": 6.229,
+    "lon": -75.5865,
+    "order": 39
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Bancolombia Punto Clave",
+    "lat": 6.231,
+    "lon": -75.588,
+    "order": 40
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Hospital General Av Palacé 32",
+    "lat": 6.242,
+    "lon": -75.5845,
+    "order": 41
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Palacé con Av 33",
+    "lat": 6.2405,
+    "lon": -75.584,
+    "order": 42
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Cr 50 41-40",
+    "lat": 6.243,
+    "lon": -75.589,
+    "order": 43
+  },
+  {
+    "route_id": 133,
+    "stop_name": "Paradero Solobus San Antonio Cl 47 Cr 46",
+    "lat": 6.2445,
+    "lon": -75.5935,
+    "order": 44
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Iglesia San Lucas",
+    "lat": 6.1895,
+    "lon": -75.5576,
+    "order": 1
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Sytecsa Calle 18 Sur",
+    "lat": 6.1908,
+    "lon": -75.5582,
+    "order": 2
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Calle 16a Sur 303",
+    "lat": 6.192,
+    "lon": -75.559,
+    "order": 3
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Mall Campestre Drive In",
+    "lat": 6.1935,
+    "lon": -75.5602,
+    "order": 4
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Calle 16a Sur 352",
+    "lat": 6.1943,
+    "lon": -75.561,
+    "order": 5
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Club Campestre Medellin",
+    "lat": 6.1955,
+    "lon": -75.5622,
+    "order": 6
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Club Campestre",
+    "lat": 6.1962,
+    "lon": -75.5628,
+    "order": 7
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Inexmoda",
+    "lat": 6.1988,
+    "lon": -75.565,
+    "order": 8
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Santa Fe Av Poblado",
+    "lat": 6.1999,
+    "lon": -75.566,
+    "order": 9
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Rio Sur",
+    "lat": 6.2005,
+    "lon": -75.5668,
+    "order": 10
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Mall Milla de Oro",
+    "lat": 6.2009,
+    "lon": -75.5674,
+    "order": 11
+  },
+  {
+    "route_id": 135,
+    "stop_name": "CC La Estrada",
+    "lat": 6.2025,
+    "lon": -75.5678,
+    "order": 12
+  },
+  {
+    "route_id": 135,
+    "stop_name": "San Fernando Plaza",
+    "lat": 6.204,
+    "lon": -75.5676,
+    "order": 13
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Clinica Medellin Poblado",
+    "lat": 6.2047,
+    "lon": -75.567,
+    "order": 14
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Av El Poblado 102",
+    "lat": 6.207,
+    "lon": -75.5672,
+    "order": 15
+  },
+  {
+    "route_id": 135,
+    "stop_name": "HVM",
+    "lat": 6.2085,
+    "lon": -75.5675,
+    "order": 16
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Castropol",
+    "lat": 6.21,
+    "lon": -75.568,
+    "order": 17
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Centro Empresarial Block",
+    "lat": 6.2115,
+    "lon": -75.5685,
+    "order": 18
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Telemedellin",
+    "lat": 6.214,
+    "lon": -75.5695,
+    "order": 19
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Barrio Colombia",
+    "lat": 6.2281,
+    "lon": -75.5689,
+    "order": 20
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Premium Plaza",
+    "lat": 6.2325,
+    "lon": -75.5704,
+    "order": 21
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Hospital General",
+    "lat": 6.2363,
+    "lon": -75.5721,
+    "order": 22
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Exposiciones",
+    "lat": 6.2395,
+    "lon": -75.5732,
+    "order": 23
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Palace Av 33",
+    "lat": 6.2408,
+    "lon": -75.574,
+    "order": 24
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Av Oriental Centro",
+    "lat": 6.2485,
+    "lon": -75.568,
+    "order": 25
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Parque San Antonio",
+    "lat": 6.2476,
+    "lon": -75.5691,
+    "order": 26
+  },
+  {
+    "route_id": 135,
+    "stop_name": "San Diego",
+    "lat": 6.2309,
+    "lon": -75.5665,
+    "order": 27
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Almacentro",
+    "lat": 6.226,
+    "lon": -75.5685,
+    "order": 28
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Perpetuo Socorro",
+    "lat": 6.2245,
+    "lon": -75.5695,
+    "order": 29
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Ciudad del Rio",
+    "lat": 6.223,
+    "lon": -75.5702,
+    "order": 30
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Industriales",
+    "lat": 6.2295,
+    "lon": -75.5735,
+    "order": 31
+  },
+  {
+    "route_id": 135,
+    "stop_name": "Monterrey",
+    "lat": 6.23,
+    "lon": -75.574,
+    "order": 32
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cl 35C Cr 87 (La Almería)",
+    "lat": 6.2465,
+    "lon": -75.6065,
+    "order": 1
+  },
+  {
+    "route_id": 190,
+    "stop_name": "La Almería Cl 35",
+    "lat": 6.246,
+    "lon": -75.6055,
+    "order": 2
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cl 35 85D",
+    "lat": 6.2455,
+    "lon": -75.6045,
+    "order": 3
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cl 34 85B",
+    "lat": 6.2445,
+    "lon": -75.604,
+    "order": 4
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Centro Médico Adventista",
+    "lat": 6.2435,
+    "lon": -75.6035,
+    "order": 5
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Universidad Adventista",
+    "lat": 6.2425,
+    "lon": -75.603,
+    "order": 6
+  },
+  {
+    "route_id": 190,
+    "stop_name": "El Castillo Cr 84",
+    "lat": 6.2415,
+    "lon": -75.6025,
+    "order": 7
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Parque La Castellana",
+    "lat": 6.2405,
+    "lon": -75.601,
+    "order": 8
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av 33 Cl 82A",
+    "lat": 6.2395,
+    "lon": -75.6,
+    "order": 9
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Iglesia Santa Gema",
+    "lat": 6.2385,
+    "lon": -75.599,
+    "order": 10
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Segundo Parque Laureles Cl 35",
+    "lat": 6.2375,
+    "lon": -75.598,
+    "order": 11
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cl 36 Cr 77",
+    "lat": 6.2365,
+    "lon": -75.597,
+    "order": 12
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cr 80 Cl 36",
+    "lat": 6.2355,
+    "lon": -75.596,
+    "order": 13
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cr 80 Cl 37 (Lorena)",
+    "lat": 6.2345,
+    "lon": -75.595,
+    "order": 14
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Primer Parque Laureles Cl 39D",
+    "lat": 6.2335,
+    "lon": -75.594,
+    "order": 15
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Circular 1",
+    "lat": 6.2325,
+    "lon": -75.593,
+    "order": 16
+  },
+  {
+    "route_id": 190,
+    "stop_name": "UPB Circular 1",
+    "lat": 6.2315,
+    "lon": -75.592,
+    "order": 17
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Circular 1 Cr 66B",
+    "lat": 6.2305,
+    "lon": -75.591,
+    "order": 18
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av Bolivariana Cr 66B",
+    "lat": 6.2295,
+    "lon": -75.59,
+    "order": 19
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av Bolivariana Cl 39",
+    "lat": 6.2285,
+    "lon": -75.589,
+    "order": 20
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cr 64B Cl 41",
+    "lat": 6.2275,
+    "lon": -75.588,
+    "order": 21
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Separador Alpujarra",
+    "lat": 6.229,
+    "lon": -75.5885,
+    "order": 22
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cr 48 Cl 43",
+    "lat": 6.231,
+    "lon": -75.5875,
+    "order": 23
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av Oriental Cl 45 (Colón)",
+    "lat": 6.238,
+    "lon": -75.5905,
+    "order": 24
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cr 45 Cl 49",
+    "lat": 6.242,
+    "lon": -75.5915,
+    "order": 25
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av Oriental Cl 49",
+    "lat": 6.243,
+    "lon": -75.592,
+    "order": 26
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Parque San Antonio",
+    "lat": 6.244,
+    "lon": -75.594,
+    "order": 27
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Parque de las Luces",
+    "lat": 6.245,
+    "lon": -75.595,
+    "order": 28
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av Bolivariana Cr 64 (San Joaquín)",
+    "lat": 6.23,
+    "lon": -75.5905,
+    "order": 29
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av Bolivariana Circular 6",
+    "lat": 6.231,
+    "lon": -75.5915,
+    "order": 30
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av Bolivariana Circular 4",
+    "lat": 6.232,
+    "lon": -75.5925,
+    "order": 31
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av 74B Cl 39B (Ay Caramba)",
+    "lat": 6.2345,
+    "lon": -75.5955,
+    "order": 36
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cr 80 Cl 38A (Lorena)",
+    "lat": 6.2355,
+    "lon": -75.5965,
+    "order": 37
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cr 80 Cl 38",
+    "lat": 6.236,
+    "lon": -75.597,
+    "order": 38
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Éxito Laureles Cr 80",
+    "lat": 6.237,
+    "lon": -75.598,
+    "order": 39
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Av 33 Cr 80B",
+    "lat": 6.238,
+    "lon": -75.599,
+    "order": 40
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cr 84 Cl 33",
+    "lat": 6.2415,
+    "lon": -75.602,
+    "order": 44
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cl 34 Cr 85B",
+    "lat": 6.2435,
+    "lon": -75.604,
+    "order": 46
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cl 35 Cr 85D",
+    "lat": 6.2445,
+    "lon": -75.605,
+    "order": 47
+  },
+  {
+    "route_id": 190,
+    "stop_name": "Cl 35 Cr 88 (Santa Teresita)",
+    "lat": 6.247,
+    "lon": -75.6075,
+    "order": 48
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 35C Cr 86A (La Almería)",
+    "lat": 6.246,
+    "lon": -75.6055,
+    "order": 1
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 35 Cr 87C",
+    "lat": 6.2468,
+    "lon": -75.6065,
+    "order": 2
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 35 Cr 85D",
+    "lat": 6.2455,
+    "lon": -75.6045,
+    "order": 3
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 35 Cr 84",
+    "lat": 6.2445,
+    "lon": -75.6035,
+    "order": 4
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 35 Cr 81A",
+    "lat": 6.243,
+    "lon": -75.6015,
+    "order": 5
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 35 Cr 80B",
+    "lat": 6.242,
+    "lon": -75.6005,
+    "order": 6
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 35 Cr 80",
+    "lat": 6.2415,
+    "lon": -75.6,
+    "order": 7
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Segundo Parque Laureles Cl 35",
+    "lat": 6.2405,
+    "lon": -75.599,
+    "order": 8
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Transversal 38",
+    "lat": 6.239,
+    "lon": -75.598,
+    "order": 9
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Circular 72 Cl 39A",
+    "lat": 6.238,
+    "lon": -75.597,
+    "order": 10
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Circular 2",
+    "lat": 6.237,
+    "lon": -75.596,
+    "order": 11
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Circular 4 Cr 72",
+    "lat": 6.236,
+    "lon": -75.595,
+    "order": 12
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Circular 4",
+    "lat": 6.2355,
+    "lon": -75.5945,
+    "order": 13
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cr 73 Cl 41",
+    "lat": 6.2345,
+    "lon": -75.5935,
+    "order": 14
+  },
+  {
+    "route_id": 191,
+    "stop_name": "San Juan Cr 73",
+    "lat": 6.2335,
+    "lon": -75.5925,
+    "order": 15
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cr 73 Cl 45A",
+    "lat": 6.2325,
+    "lon": -75.5915,
+    "order": 16
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 47",
+    "lat": 6.2315,
+    "lon": -75.5905,
+    "order": 17
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 48 Cr 73",
+    "lat": 6.2305,
+    "lon": -75.5895,
+    "order": 18
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Estadio Atanasio Girardot",
+    "lat": 6.2569,
+    "lon": -75.5906,
+    "order": 19
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cr 74 Cl 48",
+    "lat": 6.2555,
+    "lon": -75.5895,
+    "order": 20
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cr 74 Cl 48B",
+    "lat": 6.2545,
+    "lon": -75.5885,
+    "order": 21
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Av Colombia Cr 73",
+    "lat": 6.253,
+    "lon": -75.5875,
+    "order": 23
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 50 Cr 71",
+    "lat": 6.252,
+    "lon": -75.5865,
+    "order": 24
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 49B Cr 66 (Éxito Colombia)",
+    "lat": 6.2505,
+    "lon": -75.5855,
+    "order": 25
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Suramericana",
+    "lat": 6.255,
+    "lon": -75.59,
+    "order": 26
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Minorista Cr 58",
+    "lat": 6.248,
+    "lon": -75.5835,
+    "order": 27
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Edificio de los Espejos",
+    "lat": 6.247,
+    "lon": -75.5825,
+    "order": 28
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Maracaibo",
+    "lat": 6.246,
+    "lon": -75.5815,
+    "order": 29
+  },
+  {
+    "route_id": 191,
+    "stop_name": "CC Camino Real",
+    "lat": 6.245,
+    "lon": -75.5805,
+    "order": 30
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Iglesia San José",
+    "lat": 6.2445,
+    "lon": -75.5795,
+    "order": 31
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Av Oriental",
+    "lat": 6.2435,
+    "lon": -75.588,
+    "order": 32
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Parque San Antonio",
+    "lat": 6.244,
+    "lon": -75.594,
+    "order": 33
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cl 44 San Juan",
+    "lat": 6.2425,
+    "lon": -75.59,
+    "order": 34
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cr 50 Cl 44",
+    "lat": 6.243,
+    "lon": -75.589,
+    "order": 35
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Plazuela Nutibara",
+    "lat": 6.245,
+    "lon": -75.593,
+    "order": 37
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Parque Berrío (Carabobo)",
+    "lat": 6.25,
+    "lon": -75.563,
+    "order": 38
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cr 54",
+    "lat": 6.2485,
+    "lon": -75.5875,
+    "order": 39
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Biblioteca Pública Piloto",
+    "lat": 6.2555,
+    "lon": -75.5885,
+    "order": 41
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Aguamarina Mall Cl 51 Cr 64B",
+    "lat": 6.2565,
+    "lon": -75.5895,
+    "order": 42
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Universidad Luis Amigó Tv 51A",
+    "lat": 6.2575,
+    "lon": -75.5905,
+    "order": 43
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Av 70 Estadio",
+    "lat": 6.2585,
+    "lon": -75.5915,
+    "order": 44
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Coliseo Iván de Bedout Cr 70",
+    "lat": 6.2595,
+    "lon": -75.5925,
+    "order": 45
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Estación Estadio Cr 70",
+    "lat": 6.2605,
+    "lon": -75.5935,
+    "order": 46
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Cr 70 Cl 44A",
+    "lat": 6.2615,
+    "lon": -75.5945,
+    "order": 48
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Éxito La 70 Cr 70",
+    "lat": 6.2625,
+    "lon": -75.5955,
+    "order": 50
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Bancolombia La 70 Cr 70",
+    "lat": 6.2635,
+    "lon": -75.5965,
+    "order": 51
+  },
+  {
+    "route_id": 191,
+    "stop_name": "UPB Capilla",
+    "lat": 6.2315,
+    "lon": -75.592,
+    "order": 52
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Circular 1",
+    "lat": 6.2325,
+    "lon": -75.593,
+    "order": 53
+  },
+  {
+    "route_id": 191,
+    "stop_name": "El Colombiano Av Nutibara",
+    "lat": 6.2335,
+    "lon": -75.594,
+    "order": 54
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Juan Valdez Av Nutibara",
+    "lat": 6.2345,
+    "lon": -75.595,
+    "order": 55
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Segundo Parque Laureles Av 37",
+    "lat": 6.2355,
+    "lon": -75.596,
+    "order": 56
+  },
+  {
+    "route_id": 191,
+    "stop_name": "Don Quijote Cl 35 Cr 80B",
+    "lat": 6.2415,
+    "lon": -75.6005,
+    "order": 57
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cl 35B Cr 87A (La Almería)",
+    "lat": 6.2468,
+    "lon": -75.6065,
+    "order": 1
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cr 85 Cl 35",
+    "lat": 6.2455,
+    "lon": -75.6045,
+    "order": 2
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cl 35 Cr 84",
+    "lat": 6.2445,
+    "lon": -75.6035,
+    "order": 3
+  },
+  {
+    "route_id": 192,
+    "stop_name": "IPS Uni Adventista Cl 34",
+    "lat": 6.2435,
+    "lon": -75.603,
+    "order": 4
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Uni Adventista Cr 84",
+    "lat": 6.2425,
+    "lon": -75.6025,
+    "order": 5
+  },
+  {
+    "route_id": 192,
+    "stop_name": "La Vaquita Av 33 Cr 83B",
+    "lat": 6.2415,
+    "lon": -75.6015,
+    "order": 6
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Santa Gema Av 33 Cr 81",
+    "lat": 6.2405,
+    "lon": -75.6005,
+    "order": 7
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Santa Gema 2",
+    "lat": 6.2395,
+    "lon": -75.5995,
+    "order": 8
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cl 32E",
+    "lat": 6.2385,
+    "lon": -75.5985,
+    "order": 9
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cementerio de Belén Cl 32C Cr 78",
+    "lat": 6.2375,
+    "lon": -75.5975,
+    "order": 10
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cr 76 Cl 32E",
+    "lat": 6.2365,
+    "lon": -75.5965,
+    "order": 11
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Mobil Los Almendros Cl 32F",
+    "lat": 6.2355,
+    "lon": -75.5955,
+    "order": 12
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Estación Los Almendros Av 33 Cr 75C",
+    "lat": 6.2345,
+    "lon": -75.5945,
+    "order": 13
+  },
+  {
+    "route_id": 192,
+    "stop_name": "UPB",
+    "lat": 6.2315,
+    "lon": -75.592,
+    "order": 14
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Unicentro Av 33 Cr 65C",
+    "lat": 6.2305,
+    "lon": -75.591,
+    "order": 15
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cerro Nutibara Av 33 Cr 63B",
+    "lat": 6.2295,
+    "lon": -75.59,
+    "order": 16
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Diane & Geordi Cl 37 Cr 46",
+    "lat": 6.2285,
+    "lon": -75.589,
+    "order": 17
+  },
+  {
+    "route_id": 192,
+    "stop_name": "El Palo Cr 45 Cl 38",
+    "lat": 6.2275,
+    "lon": -75.588,
+    "order": 18
+  },
+  {
+    "route_id": 192,
+    "stop_name": "El Palo Cr 45 Cl 46",
+    "lat": 6.2265,
+    "lon": -75.587,
+    "order": 19
+  },
+  {
+    "route_id": 192,
+    "stop_name": "El Palo Cr 45 Cl 47",
+    "lat": 6.2255,
+    "lon": -75.586,
+    "order": 20
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cl 48 Cr 44",
+    "lat": 6.2245,
+    "lon": -75.585,
+    "order": 21
+  },
+  {
+    "route_id": 192,
+    "stop_name": "El Palo Cr 45 Cl 48",
+    "lat": 6.2235,
+    "lon": -75.584,
+    "order": 22
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cr 45 Cl 49",
+    "lat": 6.2225,
+    "lon": -75.583,
+    "order": 23
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cr 45 Cl 50 (La Candelaria)",
+    "lat": 6.2385,
+    "lon": -75.5905,
+    "order": 24
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Iglesia San José",
+    "lat": 6.2445,
+    "lon": -75.5795,
+    "order": 25
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Av Oriental",
+    "lat": 6.2435,
+    "lon": -75.588,
+    "order": 26
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Parque San Antonio",
+    "lat": 6.244,
+    "lon": -75.594,
+    "order": 27
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Estación Esso Cr 43A 41",
+    "lat": 6.232,
+    "lon": -75.5785,
+    "order": 28
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Torres San Sebastián (Colón)",
+    "lat": 6.2335,
+    "lon": -75.5795,
+    "order": 29
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Honda Super Motos Cl 37 Cr 48",
+    "lat": 6.2345,
+    "lon": -75.5805,
+    "order": 30
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Plaza Mayor Cl 37 Cr 52",
+    "lat": 6.236,
+    "lon": -75.582,
+    "order": 32
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Conquistadores Cr 64 Cl 33",
+    "lat": 6.2375,
+    "lon": -75.584,
+    "order": 33
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Yamaha Cl 33 Cr 65B",
+    "lat": 6.2385,
+    "lon": -75.585,
+    "order": 34
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Av 33 Cr 65C",
+    "lat": 6.2395,
+    "lon": -75.586,
+    "order": 35
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Biolab Av 33 Cr 74B",
+    "lat": 6.2405,
+    "lon": -75.5875,
+    "order": 37
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cl 34 Cr 85B",
+    "lat": 6.2445,
+    "lon": -75.604,
+    "order": 44
+  },
+  {
+    "route_id": 192,
+    "stop_name": "Cl 35 Cr 85D",
+    "lat": 6.2455,
+    "lon": -75.605,
+    "order": 45
+  },
+  {
+    "route_id": 192,
+    "stop_name": "La Almería Cl 35B",
+    "lat": 6.2465,
+    "lon": -75.606,
+    "order": 46
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl 35C Cr 87 (La Almería)",
+    "lat": 6.2465,
+    "lon": -75.6065,
+    "order": 1
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl 35 La Almería",
+    "lat": 6.246,
+    "lon": -75.6055,
+    "order": 2
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl 35 Cr 85D",
+    "lat": 6.2455,
+    "lon": -75.6045,
+    "order": 3
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl 34 Cr 85B",
+    "lat": 6.2445,
+    "lon": -75.604,
+    "order": 4
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Centro Médico Adventista",
+    "lat": 6.2435,
+    "lon": -75.6035,
+    "order": 5
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Universidad Adventista",
+    "lat": 6.2425,
+    "lon": -75.603,
+    "order": 6
+  },
+  {
+    "route_id": 193,
+    "stop_name": "El Castillo CAI Cr 84",
+    "lat": 6.2415,
+    "lon": -75.6025,
+    "order": 7
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Parque La Castellana",
+    "lat": 6.2405,
+    "lon": -75.6015,
+    "order": 8
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Av 33 Cl 82A",
+    "lat": 6.2395,
+    "lon": -75.6005,
+    "order": 9
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Iglesia Santa Gema",
+    "lat": 6.2385,
+    "lon": -75.5995,
+    "order": 10
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Av 33 Cr 80B",
+    "lat": 6.2375,
+    "lon": -75.5985,
+    "order": 11
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Av 33 Cr 65",
+    "lat": 6.2365,
+    "lon": -75.5975,
+    "order": 12
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Coomeva Av 33",
+    "lat": 6.2355,
+    "lon": -75.5965,
+    "order": 13
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Glorieta Bulerías",
+    "lat": 6.2345,
+    "lon": -75.5955,
+    "order": 14
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Av 33 Cl 66B",
+    "lat": 6.2335,
+    "lon": -75.5945,
+    "order": 15
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Fátima",
+    "lat": 6.2325,
+    "lon": -75.5935,
+    "order": 16
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 65 Cl 38",
+    "lat": 6.2315,
+    "lon": -75.5925,
+    "order": 17
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 65 Cl 39",
+    "lat": 6.2305,
+    "lon": -75.5915,
+    "order": 18
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 65 Cl 41",
+    "lat": 6.2295,
+    "lon": -75.5905,
+    "order": 19
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 65 Cl 43 (San Joaquín)",
+    "lat": 6.2285,
+    "lon": -75.5895,
+    "order": 20
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 65 Cl 47D (Naranjal)",
+    "lat": 6.2275,
+    "lon": -75.5885,
+    "order": 21
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl 50 Cr 65 (Suramericana)",
+    "lat": 6.255,
+    "lon": -75.59,
+    "order": 22
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl 50 Cr 64B",
+    "lat": 6.254,
+    "lon": -75.589,
+    "order": 23
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 56B Cl 49",
+    "lat": 6.2525,
+    "lon": -75.588,
+    "order": 24
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Dg 50 Cr 49",
+    "lat": 6.2505,
+    "lon": -75.587,
+    "order": 25
+  },
+  {
+    "route_id": 193,
+    "stop_name": "SENA Av Colombia",
+    "lat": 6.253,
+    "lon": -75.5875,
+    "order": 26
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Peatonal Suramericana",
+    "lat": 6.2545,
+    "lon": -75.5895,
+    "order": 27
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl 50 Cr 65 (Carlos E Restrepo)",
+    "lat": 6.2555,
+    "lon": -75.5905,
+    "order": 28
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl Colombia Cr 66",
+    "lat": 6.2565,
+    "lon": -75.5915,
+    "order": 29
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Tv 51A Cl 51",
+    "lat": 6.2575,
+    "lon": -75.5925,
+    "order": 30
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Universidad Luis Amigó",
+    "lat": 6.2585,
+    "lon": -75.5935,
+    "order": 31
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 70 Cl 52 (Cuarta Brigada)",
+    "lat": 6.2595,
+    "lon": -75.5945,
+    "order": 32
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 70 Cl 51",
+    "lat": 6.2605,
+    "lon": -75.5955,
+    "order": 33
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Liceo Marco Fidel Suárez",
+    "lat": 6.2615,
+    "lon": -75.5965,
+    "order": 34
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Unidad Deportiva Atanasio Girardot",
+    "lat": 6.2569,
+    "lon": -75.5906,
+    "order": 35
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Estación Estadio Cr 70",
+    "lat": 6.2625,
+    "lon": -75.5975,
+    "order": 36
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 70 Cl 44",
+    "lat": 6.2635,
+    "lon": -75.5985,
+    "order": 37
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 70 Cl 43",
+    "lat": 6.2645,
+    "lon": -75.5995,
+    "order": 38
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 70 Cl 41A",
+    "lat": 6.2655,
+    "lon": -75.6005,
+    "order": 39
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cr 70 Circular 1",
+    "lat": 6.2665,
+    "lon": -75.6015,
+    "order": 40
+  },
+  {
+    "route_id": 193,
+    "stop_name": "UPB Circular 1",
+    "lat": 6.2315,
+    "lon": -75.592,
+    "order": 41
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Circular 1 Cr 66B",
+    "lat": 6.2305,
+    "lon": -75.591,
+    "order": 42
+  },
+  {
+    "route_id": 193,
+    "stop_name": "UPB Principal",
+    "lat": 6.232,
+    "lon": -75.5925,
+    "order": 43
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Biolab Av 33 Cr 74B",
+    "lat": 6.2335,
+    "lon": -75.5955,
+    "order": 44
+  },
+  {
+    "route_id": 193,
+    "stop_name": "Cl 35 Cr 88 (Santa Teresita)",
+    "lat": 6.247,
+    "lon": -75.6075,
+    "order": 57
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Terminal del Norte Cl 83 Autopista Norte",
+    "lat": 6.28,
+    "lon": -75.57,
+    "order": 1
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Colanta Cr 64A Terminal Norte",
+    "lat": 6.279,
+    "lon": -75.571,
+    "order": 2
+  },
+  {
+    "route_id": 287,
+    "stop_name": "TCC Cr 64 Cl 67B",
+    "lat": 6.2705,
+    "lon": -75.5695,
+    "order": 3
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Puente Horacio Toro / Minorista",
+    "lat": 6.268,
+    "lon": -75.5685,
+    "order": 4
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Av Oriental Cl 56 (Villa Nueva)",
+    "lat": 6.2625,
+    "lon": -75.5855,
+    "order": 5
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Av Oriental Av La Playa",
+    "lat": 6.2585,
+    "lon": -75.5875,
+    "order": 6
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Cl 49 Cr 47 (La Candelaria)",
+    "lat": 6.2445,
+    "lon": -75.5895,
+    "order": 7
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Dg 50 Cr 50",
+    "lat": 6.2455,
+    "lon": -75.5905,
+    "order": 8
+  },
+  {
+    "route_id": 287,
+    "stop_name": "SENA Cr 59 Cl 53",
+    "lat": 6.2525,
+    "lon": -75.5865,
+    "order": 9
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Plaza Minorista Cr 59 Cl 54",
+    "lat": 6.2535,
+    "lon": -75.5855,
+    "order": 10
+  },
+  {
+    "route_id": 287,
+    "stop_name": "U. Nacional Autopista Norte Cl 65",
+    "lat": 6.2655,
+    "lon": -75.5715,
+    "order": 11
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Puente Punto Cero Cl 67 Autopista Norte",
+    "lat": 6.2685,
+    "lon": -75.571,
+    "order": 12
+  },
+  {
+    "route_id": 287,
+    "stop_name": "Secretaría de Movilidad Cl 72 Autopista Norte",
+    "lat": 6.2735,
+    "lon": -75.5705,
+    "order": 13
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 81 Cl 42C",
+    "lat": 6.2555,
+    "lon": -75.6105,
+    "order": 1
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Av 80 Cl 37D",
+    "lat": 6.2535,
+    "lon": -75.609,
+    "order": 2
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Lava Autos La 80 Cr 81 Cl 34",
+    "lat": 6.2525,
+    "lon": -75.6085,
+    "order": 3
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Av 80 Cl 34",
+    "lat": 6.2515,
+    "lon": -75.608,
+    "order": 4
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Santa Gema Cr 81 Cl 33A",
+    "lat": 6.2505,
+    "lon": -75.6075,
+    "order": 5
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 81 Cl 32EE",
+    "lat": 6.2495,
+    "lon": -75.607,
+    "order": 6
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 81 Cl 32",
+    "lat": 6.2485,
+    "lon": -75.6065,
+    "order": 7
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 81 Cl 30A",
+    "lat": 6.2475,
+    "lon": -75.606,
+    "order": 8
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 81 Cl 28A",
+    "lat": 6.2465,
+    "lon": -75.6055,
+    "order": 9
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 81 Cl 25",
+    "lat": 6.2455,
+    "lon": -75.605,
+    "order": 10
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cl 20A Cr 80A",
+    "lat": 6.244,
+    "lon": -75.6035,
+    "order": 11
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Dg 79 Cl 15",
+    "lat": 6.2425,
+    "lon": -75.602,
+    "order": 12
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Dg 79D Cl 9",
+    "lat": 6.241,
+    "lon": -75.6005,
+    "order": 13
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Dg 75D Cl 5",
+    "lat": 6.2395,
+    "lon": -75.599,
+    "order": 14
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Dg 75B Cl 1",
+    "lat": 6.238,
+    "lon": -75.5975,
+    "order": 15
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Dg 75B Cl 1 Sur",
+    "lat": 6.2365,
+    "lon": -75.596,
+    "order": 16
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cl 2 Sur Cr 65",
+    "lat": 6.2305,
+    "lon": -75.5905,
+    "order": 17
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cl 6 Sur Cr 52",
+    "lat": 6.2255,
+    "lon": -75.5855,
+    "order": 18
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cl 6 Sur Cr 51",
+    "lat": 6.2245,
+    "lon": -75.5845,
+    "order": 19
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 50FF Cl 7",
+    "lat": 6.2235,
+    "lon": -75.5835,
+    "order": 20
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 50FF Cl 10",
+    "lat": 6.2225,
+    "lon": -75.5825,
+    "order": 21
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cl 12 Sur Cr 50C",
+    "lat": 6.2215,
+    "lon": -75.5815,
+    "order": 22
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Sura Aguacatala",
+    "lat": 6.2055,
+    "lon": -75.578,
+    "order": 23
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Las Vegas Aguacatala",
+    "lat": 6.2045,
+    "lon": -75.577,
+    "order": 24
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Las Vegas EAFIT",
+    "lat": 6.2035,
+    "lon": -75.576,
+    "order": 25
+  },
+  {
+    "route_id": 302,
+    "stop_name": "INEM Clínica Las Vegas",
+    "lat": 6.2025,
+    "lon": -75.575,
+    "order": 26
+  },
+  {
+    "route_id": 302,
+    "stop_name": "EAFIT",
+    "lat": 6.2015,
+    "lon": -75.574,
+    "order": 27
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Las Vegas Politécnico",
+    "lat": 6.2005,
+    "lon": -75.573,
+    "order": 28
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Politécnico Jaime Isaza Cadavid",
+    "lat": 6.1995,
+    "lon": -75.572,
+    "order": 29
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Las Vegas Cl 10",
+    "lat": 6.2105,
+    "lon": -75.5685,
+    "order": 30
+  },
+  {
+    "route_id": 302,
+    "stop_name": "CC Monterrey",
+    "lat": 6.2095,
+    "lon": -75.5685,
+    "order": 31
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 48 Cl 16",
+    "lat": 6.224,
+    "lon": -75.5825,
+    "order": 32
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Ciudad del Río Cr 48 Cl 17",
+    "lat": 6.225,
+    "lon": -75.5835,
+    "order": 33
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Mercados del Río Cr 48 Cl 24",
+    "lat": 6.2275,
+    "lon": -75.585,
+    "order": 34
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Pier 30 Outlet",
+    "lat": 6.229,
+    "lon": -75.5865,
+    "order": 35
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Bancolombia Punto Clave",
+    "lat": 6.231,
+    "lon": -75.588,
+    "order": 36
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Perpetuo Socorro Cr 50 Cl 35",
+    "lat": 6.2325,
+    "lon": -75.589,
+    "order": 37
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Estación Exposiciones Cr 50 Cl 35",
+    "lat": 6.2335,
+    "lon": -75.59,
+    "order": 38
+  },
+  {
+    "route_id": 302,
+    "stop_name": "AKT",
+    "lat": 6.2345,
+    "lon": -75.591,
+    "order": 39
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cl 41 Cr 48",
+    "lat": 6.2355,
+    "lon": -75.592,
+    "order": 40
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 43A Cl 41",
+    "lat": 6.2365,
+    "lon": -75.593,
+    "order": 41
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Parque San Antonio Av Oriental",
+    "lat": 6.244,
+    "lon": -75.594,
+    "order": 42
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Iglesia San José",
+    "lat": 6.2445,
+    "lon": -75.5795,
+    "order": 43
+  },
+  {
+    "route_id": 302,
+    "stop_name": "CC Camino Real",
+    "lat": 6.245,
+    "lon": -75.5805,
+    "order": 44
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Edificio de los Espejos",
+    "lat": 6.247,
+    "lon": -75.5825,
+    "order": 45
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Prado Cl 58",
+    "lat": 6.258,
+    "lon": -75.58,
+    "order": 46
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Clínica CES Prado Cr 51",
+    "lat": 6.259,
+    "lon": -75.581,
+    "order": 47
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Prado Bus",
+    "lat": 6.26,
+    "lon": -75.582,
+    "order": 48
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 52 Cl 57",
+    "lat": 6.261,
+    "lon": -75.583,
+    "order": 49
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Plaza Minorista",
+    "lat": 6.2535,
+    "lon": -75.5855,
+    "order": 50
+  },
+  {
+    "route_id": 302,
+    "stop_name": "SENA",
+    "lat": 6.2525,
+    "lon": -75.5865,
+    "order": 51
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 57 Cl 49",
+    "lat": 6.2515,
+    "lon": -75.5875,
+    "order": 52
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cr 57 Cl 46",
+    "lat": 6.2505,
+    "lon": -75.5885,
+    "order": 53
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Estación Cisneros",
+    "lat": 6.2495,
+    "lon": -75.5895,
+    "order": 54
+  },
+  {
+    "route_id": 302,
+    "stop_name": "La Macarena",
+    "lat": 6.2485,
+    "lon": -75.5905,
+    "order": 55
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Homecenter Makro",
+    "lat": 6.2475,
+    "lon": -75.5915,
+    "order": 56
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Seguros Bolívar",
+    "lat": 6.2465,
+    "lon": -75.5925,
+    "order": 57
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Estación Texaco Cl 44 Cr 70",
+    "lat": 6.2455,
+    "lon": -75.5935,
+    "order": 58
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Cl 44 Cr 76",
+    "lat": 6.2445,
+    "lon": -75.5945,
+    "order": 59
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Colsubsidio Cl 44 Cr 77",
+    "lat": 6.2435,
+    "lon": -75.5955,
+    "order": 60
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Plaza Mercado La América",
+    "lat": 6.2425,
+    "lon": -75.5965,
+    "order": 61
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Capillas de San Juan",
+    "lat": 6.2415,
+    "lon": -75.5975,
+    "order": 62
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Vitha",
+    "lat": 6.2405,
+    "lon": -75.5985,
+    "order": 63
+  },
+  {
+    "route_id": 302,
+    "stop_name": "Av San Juan Cr 79B",
+    "lat": 6.2395,
+    "lon": -75.5995,
+    "order": 64
+  }
+]

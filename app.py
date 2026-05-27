@@ -99,7 +99,7 @@ with st.sidebar:
     capas = {
         "estaciones": st.checkbox("🚇 Estaciones Metro/Cable/Tranvía", value=True),
         "paradas":    st.checkbox("🚌 Paradas alimentadoras",          value=True),
-        "rutas_bus":  st.checkbox("🛣️ Rutas de bus (130, 190, 302…)",  value=True),
+        "rutas_bus":  st.checkbox("🛣️ Rutas TPC · gradiente congestión", value=True),
         "calor_veh":  st.checkbox("🔥 Densidad vehicular (calor)",      value=False),
     }
 
@@ -110,14 +110,21 @@ with st.sidebar:
     # ── Filtros de análisis ───────────────────────────────────────────────────
     render_section_header("Filtros de análisis")
 
-    # Sistemas activos
-    todos_sistemas = sorted(DATA["estaciones"]["sistema_label"].unique().tolist())
+    # Sistemas activos — incluyendo vehículos particulares como pseudo-sistema
+    todos_sistemas = (
+        sorted(DATA["estaciones"]["sistema_label"].unique().tolist())
+        + ["🚗 Vehículos Particulares"]
+    )
     sistemas_sel = st.multiselect(
         "Sistema",
         options=todos_sistemas,
-        default=todos_sistemas,
-        help="Filtra qué sistemas incluir en el análisis.",
+        default=sorted(DATA["estaciones"]["sistema_label"].unique().tolist()),
+        help="Filtra sistemas de tránsito. 'Vehículos Particulares' activa la capa de calor vehicular.",
     )
+
+    # Si el usuario elige Vehículos Particulares, activar capa de calor automáticamente
+    if "🚗 Vehículos Particulares" in sistemas_sel:
+        capas["calor_veh"] = True
 
     # Líneas
     lineas_disponibles = sorted(DATA["estaciones"]["linea"].unique().tolist())
@@ -248,6 +255,7 @@ mapa = build_map(
     df_rutas_bus=DATA["rutas_bus"],
     active_layers=capas,
     dark_mode=modo_oscuro,
+    franja_sel=franja_sel,
 )
 
 st_folium(
